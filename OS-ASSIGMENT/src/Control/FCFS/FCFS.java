@@ -1,5 +1,35 @@
 package Control.FCFS;
 
+import Control.Reader.Reader;
+
 public class FCFS {
 
+	public FCFS(int rawSequence[],Reader r){
+		String sequence="";
+		String working1="";
+		String working2="";
+		int total=0;
+		sequence+=r.getCurrent();
+		int previous=r.getCurrent();
+		
+		for(int i=0; i<rawSequence.length;i++)
+		{
+			int current=rawSequence[i];
+			sequence+=","+current;
+			int d= Math.abs(previous-current);
+			
+			working1+="|"+previous+"-"+current+"|+";
+			working2+=d+" + ";
+			total+=d;
+			previous=current;
+		}
+		
+		System.out.println("First Come First Serve"+'\n'+"====");
+		System.out.println("Order of Access: "+sequence);
+		System.out.println("Total Distance = "+working1.substring(0,working1.length()-1));
+		System.out.println("               = "+working2.substring(0,working2.length()-2));
+		System.out.println("               = "+total+'\n');
+		
+		
+	}
 }

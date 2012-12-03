@@ -12,7 +12,7 @@ public class Reader {
 	public Reader(Properties p){
 		this.cylinders=Integer.parseInt(p.getProperty("Cylinders"));
 		this.current=Integer.parseInt(p.getProperty("Position.Current"));
-		this.previous=Integer.parseInt(p.getProperty("Position.previous"));
+		this.previous=Integer.parseInt(p.getProperty("Position.Previous"));
 		String token[]=p.getProperty("Sequence").split(",");
 		rawSequence=new int[token.length];
 		for(int i=0; i<token.length;i++)

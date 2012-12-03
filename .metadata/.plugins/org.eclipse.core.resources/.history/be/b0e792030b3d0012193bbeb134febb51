@@ -1,0 +1,59 @@
+package Control.Reader;
+
+import java.util.Properties;
+
+public class Reader {
+
+	int previous;
+	int current;
+	int rawSequence[];
+	int cylinders;
+	
+	public Reader(Properties p){
+		this.cylinders=Integer.parseInt(p.getProperty("Cylinders=5000;"));
+		this.current=Integer.parseInt(p.getProperty("Position.Current"));
+		this.previous=Integer.parseInt(p.getProperty("Position.Previous"));
+		String token[]=p.getProperty("Sequence").split(",");
+		rawSequence=new int[token.length];
+		for(int i=0; i<token.length;i++)
+		{
+			rawSequence[i]=Integer.parseInt(token[i]);
+			System.out.print(rawSequence[i]);
+		}
+	}
+
+	
+	
+	
+	public int getPrevious() {
+		return previous;
+	}
+
+	public void setPrevious(int previous) {
+		this.previous = previous;
+	}
+
+	public int getCurrent() {
+		return current;
+	}
+
+	public void setCurrent(int current) {
+		this.current = current;
+	}
+
+	public int[] getRawSequence() {
+		return rawSequence;
+	}
+
+	public void setRawSequence(int[] rawSequence) {
+		this.rawSequence = rawSequence;
+	}
+
+	public int getCylinders() {
+		return cylinders;
+	}
+
+	public void setCylinders(int cylinders) {
+		this.cylinders = cylinders;
+	}
+}

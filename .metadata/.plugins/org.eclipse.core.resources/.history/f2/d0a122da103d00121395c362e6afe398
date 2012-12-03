@@ -1,0 +1,14 @@
+package Control.SCAN;
+
+import Control.Reader.Reader;
+
+public class Scan {
+	Reader r;
+	
+	public Scan(int current, int previous,int rawSequence[],Reader r){
+		this.r=r;
+		int direction;
+		if(previous>current)direction=0;
+		else direction=1;
+	}
+}

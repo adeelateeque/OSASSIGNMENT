@@ -1,0 +1,9 @@
+package Control.SSTF;
+
+import Control.Reader.Reader;
+
+public class SSTF {
+	public SSTF(int rawSequence[], Reader r){
+		
+	}
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="11" version="2.0">
+<workbench progressCount="13" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="26" y="0">
 <fastViewData fastViewLocation="1024">
@@ -31,22 +31,17 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FCFS.java" partName="FCFS.java" path="C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/OS-ASSIGMENT/src/Control/FCFS/FCFS.java" title="FCFS.java" tooltip="OS-ASSIGMENT/src/Control/FCFS/FCFS.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OS-ASSIGMENT/src/Control/FCFS/FCFS.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Scan.java" partName="Scan.java" path="C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/OS-ASSIGMENT/src/Control/SCAN/Scan.java" title="Scan.java" tooltip="OS-ASSIGMENT/src/Control/SCAN/Scan.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OS-ASSIGMENT/src/Control/SCAN/Scan.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="330" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Reader.java" partName="Reader.java" path="C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/OS-ASSIGMENT/src/Control/Reader/Reader.java" title="Reader.java" tooltip="OS-ASSIGMENT/src/Control/Reader/Reader.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OS-ASSIGMENT/src/Control/Reader/Reader.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="591" selectionTopPixel="21"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Start.java" partName="Start.java" path="C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/OS-ASSIGMENT/src/Control/Reader/Start.java" title="Start.java" tooltip="OS-ASSIGMENT/src/Control/Reader/Start.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Start.java" partName="Start.java" path="C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/OS-ASSIGMENT/src/Control/Reader/Start.java" title="Start.java" tooltip="OS-ASSIGMENT/src/Control/Reader/Start.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OS-ASSIGMENT/src/Control/Reader/Start.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="585" selectionTopPixel="123"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="823" selectionTopPixel="174"/>
 </editor>
 </editors>
 <views>
@@ -56,6 +51,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -64,6 +60,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1354506979944">
@@ -156,6 +155,7 @@
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViews>
 <view id="org.eclipse.ve.internal.java.codegen.editorpart.XMLViewPart" ratio="0.95"/>
@@ -186,12 +186,12 @@
 </info>
 <info part="org.eclipse.gef.ui.palette_view" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7491749" ratioLeft="454" ratioRight="152" relationship="4" relative="org.eclipse.gef.ui.palette_view">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
@@ -199,6 +199,7 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -224,6 +225,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OS-ASSIGMENT/src/Control/FCFS/FCFS.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OS-ASSIGMENT/src/Control/Reader/Reader.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OS-ASSIGMENT/src/Control/Reader/Start.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OS-ASSIGMENT/src/Control/SSTF/SSTF.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OS-ASSIGMENT/src/Control/SCAN/Scan.java"/>
 </editors>
 <item historyLabel="FCFS.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -282,8 +285,44 @@
 <item historyLabel="Start.java" index="2">
 <position info="not_deleted" x="500" y="0"/>
 </item>
-<item active="true" historyLabel="Start.java" index="2">
-<position info="not_deleted" x="547" y="0"/>
+<item historyLabel="Start.java" index="2">
+<position info="not_deleted" x="525" y="0"/>
+</item>
+<item historyLabel="SSTF.java" index="3">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="Start.java" index="2">
+<position info="not_deleted" x="525" y="0"/>
+</item>
+<item historyLabel="SSTF.java" index="3">
+<position info="not_deleted" x="434" y="0"/>
+</item>
+<item historyLabel="Scan.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Scan.java" index="4">
+<position info="not_deleted" x="334" y="0"/>
+</item>
+<item historyLabel="Start.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Start.java" index="2">
+<position info="not_deleted" x="830" y="0"/>
+</item>
+<item historyLabel="Scan.java" index="4">
+<position info="not_deleted" x="334" y="0"/>
+</item>
+<item historyLabel="Scan.java" index="4">
+<position info="not_deleted" x="133" y="0"/>
+</item>
+<item historyLabel="Start.java" index="2">
+<position info="not_deleted" x="823" y="0"/>
+</item>
+<item historyLabel="Scan.java" index="4">
+<position info="not_deleted" x="133" y="0"/>
+</item>
+<item active="true" historyLabel="Scan.java" index="4">
+<position info="not_deleted" x="334" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -304,6 +343,12 @@
 <mruList>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Start.java" tooltip="OS-ASSIGMENT/src/Control/Reader/Start.java">
 <persistable path="/OS-ASSIGMENT/src/Control/Reader/Start.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Scan.java" tooltip="OS-ASSIGMENT/src/Control/SCAN/Scan.java">
+<persistable path="/OS-ASSIGMENT/src/Control/SCAN/Scan.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SSTF.java" tooltip="OS-ASSIGMENT/src/Control/SSTF/SSTF.java">
+<persistable path="/OS-ASSIGMENT/src/Control/SSTF/SSTF.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Reader.java" tooltip="OS-ASSIGMENT/src/Control/Reader/Reader.java">
 <persistable path="/OS-ASSIGMENT/src/Control/Reader/Reader.java"/>
