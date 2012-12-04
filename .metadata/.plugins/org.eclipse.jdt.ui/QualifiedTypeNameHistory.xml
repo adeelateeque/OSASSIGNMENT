@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="Control.Reader.Reader"/>
 <fullyQualifiedTypeName name="Control.LOOK.Look"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="Control.CSCAN.CScan"/>
 </qualifiedTypeNameHistroy>
