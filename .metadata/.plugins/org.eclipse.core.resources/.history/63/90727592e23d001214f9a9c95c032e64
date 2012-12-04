@@ -1,0 +1,48 @@
+package Control.SCAN;
+
+import java.util.Arrays;
+
+import Control.Reader.Reader;
+
+public class Scan {
+	Reader r;
+	
+	public Scan(int current, int previous,int rawSequence[],Reader r){
+		this.r=r;
+		int direction=0;
+		//finding the direction of the arrow..
+		if(previous>current){direction=0;addZero(rawSequence); };  // going towards zero, adds 0 into the array
+		if(previous<current)direction=1;  // going away from zero, adds the max clyinder num into the array
+		
+		//sorting the sequence in order
+		//adding the int 0 and the max num of the cylin
+		Arrays.sort(rawSequence);
+	}
+	
+	public Scan() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void addZero(int rawSequence[]){
+		int arraylist[]= new int[rawSequence.length+1];
+		for(int i=0; i<arraylist.length;i++){
+			if(i==rawSequence.length)return;
+			else arraylist[i]=rawSequence[i];
+		}
+		arraylist[arraylist.length+1]=0;
+		rawSequence= new int[arraylist.length];
+		for (int i=0; i<arraylist.length;i++){
+			rawSequence[i]=arraylist[i];
+		}
+	}
+	public static void main(String a[]){
+		int sequence[]={2,3,9,1,7};
+		System.out.println("legth is :"+sequence.length);
+		Scan s=new Scan();
+		s.addZero(sequence);
+		Arrays.sort(sequence);
+		for(int i=0; i<sequence.length;i++){
+			System.out.println(sequence[i]);
+		}
+	}
+}

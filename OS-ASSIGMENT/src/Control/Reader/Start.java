@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.util.Properties;
 
 import Control.FCFS.FCFS;
+import Control.LOOK.Look;
 import Control.SCAN.Scan;
 import Control.SSTF.SSTF;
 
@@ -13,7 +14,7 @@ public class Start {
 	Reader r;
 	
 	public static void main(String args[]){
-		new Start("diskq1.Properties",2);
+		new Start("diskq1.Properties",3);
 	}
 	
 	public Start(String fileName, int method){
@@ -34,6 +35,7 @@ public class Start {
 		if(method==1) new FCFS(r.getRawSequence(),r);
 		if(method==2) new SSTF(r.getCurrent(),r.getRawSequence(),r);
 		if(method==3) new Scan(r.getCurrent(),r.getPrevious(),r.getRawSequence(),r);
+		if(method==4) new Look();
 	}
 	
 	

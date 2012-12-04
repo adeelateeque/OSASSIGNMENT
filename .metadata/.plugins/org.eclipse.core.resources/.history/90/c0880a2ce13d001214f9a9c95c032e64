@@ -1,0 +1,28 @@
+package Control.SCAN;
+
+import java.util.Arrays;
+
+import Control.Reader.Reader;
+
+public class Scan {
+	Reader r;
+	
+	public Scan(int current, int previous,int rawSequence[],Reader r){
+		this.r=r;
+		int direction=0;
+		//finding the direction of the arrow..
+		if(previous>current)direction=0;  // going towards zero
+		if(previous<current)direction=1;  // going away from zero
+		
+		//sorting the sequence in order
+		Arrays.sort(rawSequence);
+	}
+	
+	public static void main(String a[]){
+		int sequence[]={2,3,9,1,7};
+		Arrays.sort(sequence);
+		for(int i=0; i<sequence.length;i++){
+			System.out.println(sequence[i]);
+		}
+	}
+}
