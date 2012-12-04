@@ -18,7 +18,6 @@ public class Start {
 		new Start("diskq1.Properties",1);
 		new Start("diskq1.Properties",2);
 		new Start("diskq1.Properties",3);
-		new Start("diskq1.Properties",4);
 	}
 	
 	public Start(String fileName, int method){

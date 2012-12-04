@@ -24,7 +24,7 @@ Reader r;
 		}
 		
 		//sorts it in scan methods
-		CSCAN(cScanSequence,direction,r.getCurrent());
+		//CSCAN(scanSequence,direction,r.getCurrent());
 	}
 	
 	public int[]addHeadAndTail(int [] rawSequence,int tail){
@@ -41,10 +41,4 @@ Reader r;
 		}
 		return rawSequence;
 	}
-	
-	
-	public void CSCAN(int[]rawSequence, int direction,int current){
-		
-	}
-	
 }

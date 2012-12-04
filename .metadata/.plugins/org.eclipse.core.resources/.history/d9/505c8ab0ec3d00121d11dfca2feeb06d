@@ -24,13 +24,13 @@ Reader r;
 		}
 		
 		//sorts it in scan methods
-		CSCAN(cScanSequence,direction,r.getCurrent());
+		//CSCAN(scanSequence,direction,r.getCurrent());
 	}
 	
 	public int[]addHeadAndTail(int [] rawSequence,int tail){
 		int arraylist[]= new int[rawSequence.length+2];
 		for(int i=0; i<arraylist.length;i++){
-			if(i==rawSequence.length)break;
+			if(i==rawSequence.length);
 			else arraylist[i]=rawSequence[i];
 		}
 		arraylist[arraylist.length-1]=0;
@@ -41,10 +41,4 @@ Reader r;
 		}
 		return rawSequence;
 	}
-	
-	
-	public void CSCAN(int[]rawSequence, int direction,int current){
-		
-	}
-	
 }
