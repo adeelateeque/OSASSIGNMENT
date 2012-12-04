@@ -52,7 +52,7 @@ public class Scan {
 	}
 
 	public void SCAN(int rawSequence[],int direction,int current){
-		int sortedSequence[]=new int[rawSequence.length];
+		int sortedSequence[]=new int[rawSequence.length+1];
 				
 		if(direction==0)//going towards zero direction
 		{
@@ -70,7 +70,7 @@ public class Scan {
 				filledIndex++;
 			}
 			for(int i=startIndex;i<rawSequence.length;i++){
-				sortedSequence[i]=rawSequence[i];
+				sortedSequence[i+1]=rawSequence[i];
 			}
 		}
 		
