@@ -58,11 +58,11 @@ public class SSTF {
 			previous=current;
 		}
 		
-		System.out.println("Shortest Path Come First"+'\n'+"====");
-		System.out.println("Order of Access: "+sequence);
-		System.out.println("Total Distance = "+working1.substring(0,working1.length()-1));
-		System.out.println("               = "+working2.substring(0,working2.length()-2));
-		System.out.println("               = "+total+'\n');
+		System.out.println("Method\t: SSTF"+'\n'+"-----------------");
+		System.out.println("Order of Access\t: "+sequence);
+		System.out.println("Total Distance\t= "+working1.substring(0,working1.length()-1));
+		System.out.println("              \t= "+working2.substring(0,working2.length()-2));
+		System.out.println("              \t= "+total+'\n');
 		
 		
 	}

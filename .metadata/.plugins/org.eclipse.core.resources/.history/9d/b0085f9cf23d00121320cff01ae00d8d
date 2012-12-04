@@ -1,0 +1,23 @@
+package Control.CLOOK;
+
+import java.util.Arrays;
+
+import Control.Reader.Reader;
+
+public class CLook {
+	Reader r;
+	
+	public CLook(int current, int previous,int rawSequence[],Reader r){
+		this.r=r;
+		int direction=0;
+		int cScanSequence[] = rawSequence;
+		//finding the direction of the arrow..
+		if(previous>current){direction=0; };  // going towards zero
+		if(previous<current){direction=1;}  // going away from zero
+		
+		//sorting the sequence in order
+		Arrays.sort(cScanSequence);
+		//sorts it in CScan methods
+		CLOOK(cScanSequence,direction,r.getCurrent());
+	}
+}

@@ -24,11 +24,11 @@ public class FCFS {
 			previous=current;
 		}
 		
-		System.out.println("First Come First Serve"+'\n'+"====");
-		System.out.println("Order of Access: "+sequence);
-		System.out.println("Total Distance = "+working1.substring(0,working1.length()-1));
-		System.out.println("               = "+working2.substring(0,working2.length()-2));
-		System.out.println("               = "+total+'\n');
+		System.out.println("Method\t: FCFS"+'\n'+"-----------------");
+		System.out.println("Order of Access\t: "+sequence);
+		System.out.println("Total Distance\t= "+working1.substring(0,working1.length()-1));
+		System.out.println("              \t= "+working2.substring(0,working2.length()-2));
+		System.out.println("              \t= "+total+'\n');
 		
 		
 	}

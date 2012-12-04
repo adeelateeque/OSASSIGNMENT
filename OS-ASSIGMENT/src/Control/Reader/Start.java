@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Properties;
 
+import Control.CLOOK.CLook;
 import Control.CSCAN.CScan;
 import Control.FCFS.FCFS;
 import Control.LOOK.Look;
@@ -20,6 +21,7 @@ public class Start {
 		new Start("diskq1.Properties",3);
 		new Start("diskq1.Properties",4);
 		new Start("diskq1.Properties",5);
+		new Start("diskq1.Properties",6);
 	}
 	
 	public Start(String fileName, int method){
@@ -41,7 +43,8 @@ public class Start {
 		if(method==2) new SSTF(r.getCurrent(),r.getRawSequence(),r);
 		if(method==3) new Scan(r.getCurrent(),r.getPrevious(),r.getRawSequence(),r);
 		if(method==4) new CScan(r.getCurrent(),r.getPrevious(),r.getRawSequence(),r);
-		if(method==5) new Look();
+		if(method==5) new Look(r.getCurrent(),r.getPrevious(),r.getRawSequence(),r);
+		if(method==6) new CLook(r.getCurrent(),r.getPrevious(),r.getRawSequence(),r);
 	}
 	
 	

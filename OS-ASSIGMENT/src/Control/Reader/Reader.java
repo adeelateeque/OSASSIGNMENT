@@ -19,6 +19,20 @@ public class Reader {
 		{
 			rawSequence[i]=Integer.parseInt(token[i]);
 		}
+		
+		
+		System.out.println("===========================================================");
+		System.out.print("Orginal Order\t: ");
+		for(int i=0;i<rawSequence.length-1;i++){
+			System.out.print(rawSequence[i]+",");
+		}
+		System.out.print(rawSequence[rawSequence.length-1]);
+		
+		System.out.println("\nCurrent Head\t: "+current);
+		System.out.println("Previous Head\t: "+previous);
+		System.out.println("===========================================================\n");
+		
+		
 	}
 
 	

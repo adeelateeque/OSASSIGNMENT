@@ -6,7 +6,7 @@ import Control.Reader.Reader;
 
 public class CScan {
 
-Reader r;
+	Reader r;
 	
 	public CScan(int current, int previous,int rawSequence[],Reader r){
 		this.r=r;
@@ -19,11 +19,7 @@ Reader r;
 		
 		//sorting the sequence in order
 		Arrays.sort(cScanSequence);
-		for(int i=0; i<cScanSequence.length;i++){
-			System.out.println(cScanSequence[i]);
-		}
-		System.out.println("\n\n\n");
-		//sorts it in scan methods
+		//sorts it in CScan methods
 		CSCAN(cScanSequence,direction,r.getCurrent());
 	}
 	
@@ -53,7 +49,7 @@ Reader r;
 			for(int i=0;i<rawSequence.length;i++){
 				if(current<rawSequence[i]){startIndex=i; break;}
 			}
-			//sorting into scan method
+			//sorting into CScan method
 			int filledIndex=0;
 			for(int i=startIndex-1;i>0;i--){
 				sortedSequence[filledIndex]=rawSequence[i];
@@ -74,8 +70,7 @@ Reader r;
 				
 			}
 			
-			System.out.println(startIndex);
-			//sorting into scan method
+			//sorting into CScan method
 			int filledIndex=0;
 			for(int i=startIndex;i<rawSequence.length;i++){
 				sortedSequence[filledIndex]=rawSequence[i];
@@ -110,11 +105,11 @@ Reader r;
 			previous=current;
 		}
 		
-		System.out.println("CSCAN"+'\n'+"====");
-		System.out.println("Order of Access: "+sequence);
-		System.out.println("Total Distance = "+working1.substring(0,working1.length()-1));
-		System.out.println("               = "+working2.substring(0,working2.length()-2));
-		System.out.println("               = "+total+'\n');
+		System.out.println("Method\t: CSCAN"+'\n'+"-----------------");
+		System.out.println("Order of Access\t: "+sequence);
+		System.out.println("Total Distance\t= "+working1.substring(0,working1.length()-1));
+		System.out.println("              \t= "+working2.substring(0,working2.length()-2));
+		System.out.println("              \t= "+total+'\n');
 		
 	}
 	
