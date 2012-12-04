@@ -4,4 +4,6 @@
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="Control.SCAN.Scan"/>
 <fullyQualifiedTypeName name="Control.Reader.Reader"/>
+<fullyQualifiedTypeName name="Control.LOOK.Look"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
