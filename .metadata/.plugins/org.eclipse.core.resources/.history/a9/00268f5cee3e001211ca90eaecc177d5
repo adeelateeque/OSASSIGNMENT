@@ -34,7 +34,7 @@ import org.jfree.ui.RefineryUtilities;
 import Demo.LineChartDemo1;
 
 public class DiskOptimizationApp {
-	
+
 	private JWindow jWindow = null;  //  @jve:decl-index=0:visual-constraint="123,146"
 	private JPanel jContentPane = null;
 	private JToolBar jJToolBarBar = null;
@@ -225,6 +225,8 @@ public class DiskOptimizationApp {
 	private JPanel getJPanel_leftContent() {
 		if (jPanel_leftContent == null) {
 			jPanel_leftContent = new JPanel();
+			LineChartDemo1 linechartdemo1 = new LineChartDemo1("OS Algorithm");
+	        jPanel_leftContent.add(linechartdemo1);
 			jPanel_leftContent.setLayout(new GridBagLayout());
 		}
 		return jPanel_leftContent;

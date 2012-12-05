@@ -34,7 +34,7 @@ import org.jfree.ui.RefineryUtilities;
 import Demo.LineChartDemo1;
 
 public class DiskOptimizationApp {
-	
+	public static void main(String a[]){DiskOptimizationApp d= new DiskOptimizationApp(); d.getJWindow().setVisible(true);}
 	private JWindow jWindow = null;  //  @jve:decl-index=0:visual-constraint="123,146"
 	private JPanel jContentPane = null;
 	private JToolBar jJToolBarBar = null;

@@ -2,14 +2,17 @@ package View;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.UIManager;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Color;
 import java.awt.Point;
+
 import javax.swing.JSplitPane;
 import java.awt.GridBagLayout;
 import javax.swing.JWindow;
+import java.awt.Toolkit;
 import java.awt.ComponentOrientation;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
@@ -34,7 +37,7 @@ import org.jfree.ui.RefineryUtilities;
 import Demo.LineChartDemo1;
 
 public class DiskOptimizationApp {
-	
+
 	private JWindow jWindow = null;  //  @jve:decl-index=0:visual-constraint="123,146"
 	private JPanel jContentPane = null;
 	private JToolBar jJToolBarBar = null;
@@ -225,6 +228,8 @@ public class DiskOptimizationApp {
 	private JPanel getJPanel_leftContent() {
 		if (jPanel_leftContent == null) {
 			jPanel_leftContent = new JPanel();
+			LineChartDemo1 linechartdemo1 = new LineChartDemo1("OS Algorithm");
+	        jPanel_leftContent.add(linechartdemo1);
 			jPanel_leftContent.setLayout(new GridBagLayout());
 		}
 		return jPanel_leftContent;
@@ -249,6 +254,11 @@ public class DiskOptimizationApp {
 		}
 		return jPanel_rightContent;
 	}
+	/**
+	 * This method initializes jButton_Upload	
+	 * 	
+	 * @return javax.swing.JButton	
+	 */
 	private JButton getJButton_Upload() {
 		if (jButton_Upload == null) {
 			jButton_Upload = new JButton();
@@ -257,6 +267,11 @@ public class DiskOptimizationApp {
 		}
 		return jButton_Upload;
 	}
+	/**
+	 * This method initializes jRadioButton_FCFS	
+	 * 	
+	 * @return javax.swing.JRadioButton	
+	 */
 	private JRadioButton getJRadioButton_FCFS() {
 		if (jRadioButton_FCFS == null) {
 			jRadioButton_FCFS = new JRadioButton();
@@ -267,6 +282,11 @@ public class DiskOptimizationApp {
 		}
 		return jRadioButton_FCFS;
 	}
+	/**
+	 * This method initializes jRadioButton_SSTF	
+	 * 	
+	 * @return javax.swing.JRadioButton	
+	 */
 	private JRadioButton getJRadioButton_SSTF() {
 		if (jRadioButton_SSTF == null) {
 			jRadioButton_SSTF = new JRadioButton();
@@ -274,6 +294,11 @@ public class DiskOptimizationApp {
 		}
 		return jRadioButton_SSTF;
 	}
+	/**
+	 * This method initializes jRadioButton_SCAN	
+	 * 	
+	 * @return javax.swing.JRadioButton	
+	 */
 	private JRadioButton getJRadioButton_SCAN() {
 		if (jRadioButton_SCAN == null) {
 			jRadioButton_SCAN = new JRadioButton();
@@ -282,6 +307,11 @@ public class DiskOptimizationApp {
 		}
 		return jRadioButton_SCAN;
 	}
+	/**
+	 * This method initializes jRadioButton_CSCAN	
+	 * 	
+	 * @return javax.swing.JRadioButton	
+	 */
 	private JRadioButton getJRadioButton_CSCAN() {
 		if (jRadioButton_CSCAN == null) {
 			jRadioButton_CSCAN = new JRadioButton();
@@ -289,6 +319,11 @@ public class DiskOptimizationApp {
 		}
 		return jRadioButton_CSCAN;
 	}
+	/**
+	 * This method initializes jRadioButton_LOOK	
+	 * 	
+	 * @return javax.swing.JRadioButton	
+	 */
 	private JRadioButton getJRadioButton_LOOK() {
 		if (jRadioButton_LOOK == null) {
 			jRadioButton_LOOK = new JRadioButton();
@@ -296,6 +331,11 @@ public class DiskOptimizationApp {
 		}
 		return jRadioButton_LOOK;
 	}
+	/**
+	 * This method initializes jRadioButton_CLOOK	
+	 * 	
+	 * @return javax.swing.JRadioButton	
+	 */
 	private JRadioButton getJRadioButton_CLOOK() {
 		if (jRadioButton_CLOOK == null) {
 			jRadioButton_CLOOK = new JRadioButton();
