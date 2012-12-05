@@ -1,0 +1,23 @@
+package View;
+
+
+import java.awt.Color;
+import java.io.IOException;
+
+import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+public class SystemApp {
+	public static void main(String args[]) throws IOException{
+	
+	    UIManager.put("activeCaption", new javax.swing.plaf.ColorUIResource( Color.red));  
+		JFrame.setDefaultLookAndFeelDecorated(true);     
+		
+	    		 
+	    DiskOptimizationApp app= new DiskOptimizationApp();
+	    app.getJWindow().setVisible(true);
+	    app.getJFrame().setVisible(true);
+		
+	}
+}

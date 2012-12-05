@@ -1,0 +1,22 @@
+package View;
+
+
+import java.awt.Color;
+import java.io.IOException;
+import java.util.Properties;
+import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+import java.util.*;
+
+public class SystemApp {
+	public static void main(String args[]) throws IOException{
+	
+	   
+	    		 
+	    DiskOptimizationApp app= new DiskOptimizationApp();
+	  //  app.getJFrame().setVisible(true);
+		app.getJWindow().setVisible(true);
+	}
+}

@@ -1,0 +1,128 @@
+package View;
+
+/*
+ * JTattoo CustomTextureSample (c) 2012 by MH Software-Entwicklung
+ *
+ * This sample shows how to modify the background textures for the
+ * TextureLookAndFeel.
+ */
+
+
+import java.awt.BorderLayout;
+import java.awt.Font;
+import java.awt.event.*;
+import java.util.Properties;
+import javax.swing.*;
+
+public class CustomTextureSample extends JFrame {
+
+    // The one and only instance of the sample application
+    private static CustomTextureSample app = null;
+
+    public CustomTextureSample() {
+        super("SimplePanelTextureSample");
+
+        // Setup menu
+        JMenuBar menuBar = new JMenuBar();
+        JMenu menu = new JMenu("File");
+        menu.setMnemonic('F');
+        JMenuItem menuItem = new JMenuItem("New");
+        menuItem.setMnemonic('N');
+        menuItem.setEnabled(false);
+        menu.add(menuItem);
+        menuItem = new JMenuItem("Open...");
+        menuItem.setMnemonic('O');
+        menuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFileChooser fc = new JFileChooser();
+                if (fc.showOpenDialog(CustomTextureSample.this) == JFileChooser.APPROVE_OPTION) {
+                    JOptionPane.showMessageDialog(CustomTextureSample.this, "Your selection: " + fc.getSelectedFile().getName());
+                }
+            }
+        });
+        menu.add(menuItem);
+        menuItem = new JMenuItem("Save");
+        menuItem.setMnemonic('S');
+        menuItem.setEnabled(false);
+        menu.add(menuItem);
+        menuItem = new JMenuItem("Save as");
+        menuItem.setMnemonic('a');
+        menuItem.setEnabled(false);
+        menu.add(menuItem);
+        menu.addSeparator();
+        menuItem = new JMenuItem("Exit");
+        menuItem.setMnemonic('x');
+        menuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F4, KeyEvent.ALT_MASK));
+        menuItem.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent event) {
+                System.exit(0);
+            }
+        });
+        menu.add(menuItem);
+        menu.add(menuItem);
+        menuBar.add(menu);
+        setJMenuBar(menuBar);
+
+        // Setup the widgets
+        JPanel contentPanel = new JPanel(new BorderLayout());
+        contentPanel.setBorder(BorderFactory.createEmptyBorder(0, 4, 4, 4));
+
+        JTree tree = new JTree();
+        JScrollPane westPanel = new JScrollPane(tree);
+
+        // Here is what has to be done to style an editor with a background texture
+        JPanel editorPanel = new JPanel(new BorderLayout());
+        // Just put an icon as a client property to the panel. This icon is used by the panel to render the background.
+        editorPanel.putClientProperty("backgroundTexture", ImageHelper.loadImage("BackgroundTexture.jpg"));
+        // Setup the textarea
+        JTextArea textArea = new JTextArea("What you see is a text area\nencapsulated in a panel and\nstyled with a background\ntexture.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfin...");
+        // Use larger font.
+        textArea.setFont(new Font("Dialog", Font.PLAIN, 14));
+        // The textarea must be transparent to see the texture.
+        textArea.setOpaque(false);
+        // Some space arround the textarea looks better.
+        textArea.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+        // Add the textarea to the panel
+        editorPanel.add(textArea, BorderLayout.CENTER);
+        // Add the texture panel to a scrollpane
+        JScrollPane eastPanel = new JScrollPane(editorPanel);
+        // The scroll mode of the viewport must be simple. Otherwise the low level bit blit operations breaks the texture.
+        eastPanel.getViewport().setScrollMode(JViewport.SIMPLE_SCROLL_MODE);
+
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, true, westPanel,eastPanel);
+
+        splitPane.setDividerLocation(148);
+        contentPanel.add(splitPane, BorderLayout.CENTER);
+        setContentPane(contentPanel);
+
+        // Add listeners
+        addWindowListener(new WindowAdapter() {
+
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+        // Show the application
+        setSize(400, 300);
+        setLocationRelativeTo(null);
+        setVisible(true);
+    } // end CTor
+
+    public static void main(String[] args) {
+        try {
+            // Select the look and feel
+            UIManager.setLookAndFeel("com.jtattoo.plaf.graphite.GraphiteLookAndFeel");
+
+            // Start the application
+            app = new CustomTextureSample();
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    } // end main
+}
