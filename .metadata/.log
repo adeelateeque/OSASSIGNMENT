@@ -57,3 +57,17 @@ Command-line arguments:  -os win32 -ws win32 -arch x86
 
 !ENTRY org.eclipse.core.resources 2 10035 2012-12-05 10:23:14.365
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2012-12-05 12:16:34.124 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ve.java.core 2 0 2012-12-05 12:26:57.834
+!MESSAGE 
++++ Warning +++: Wed Dec 05 12:26:57 SGT 2012    BDM Merger: Unable to find main BDM bean in new BDM at this point
+
+!ENTRY org.eclipse.ve.java.core 2 0 2012-12-05 12:26:57.906
+!MESSAGE 
++++ Warning +++: Wed Dec 05 12:26:57 SGT 2012    BDM Merger: Unable to find main BDM bean in new BDM at this point
