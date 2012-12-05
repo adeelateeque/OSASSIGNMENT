@@ -75,6 +75,8 @@ public class DiskOptimizationApp {
 			jContentPane.setForeground(Color.WHITE);
 			jContentPane.setBorder(BorderFactory.createMatteBorder(0,0, 0,0,new ImageIcon("C:/Users/MoistyBurger/Desktop/images.jpg")) );
 			jContentPane.setBackground(Color.white);
+			
+			Border border = UIManager.getBorder("InternalFrame.border");
 			jContentPane.setBorder(BorderFactory.createBevelBorder(BevelBorder.RAISED));
 			jContentPane.add(getJJToolBarBar(), BorderLayout.NORTH);
 			jContentPane.add(getJSplitPane_left_right(), BorderLayout.CENTER);
