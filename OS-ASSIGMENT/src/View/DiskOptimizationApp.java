@@ -580,6 +580,7 @@ public class DiskOptimizationApp {
 			jButton_Run.setPreferredSize(new Dimension(200,40));
 			jButton_Run.addActionListener(new java.awt.event.ActionListener() {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
+				
 					getJSplitPane_Content().remove(1);
 					getJSplitPane_Content().setDividerLocation(450);
 					getJSplitPane_Content().setTopComponent(getJPanel_leftContent());
