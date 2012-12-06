@@ -152,7 +152,7 @@ public class DiskOptimizationApp {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
 					getJWindow().setVisible(false);
 					getJWindow().removeAll();
-					
+					getJWindow().setState(Frame.ICONIFIED);
 				}
 			});
 			jButton_close.setOpaque(false); 
@@ -168,11 +168,6 @@ public class DiskOptimizationApp {
 			jButton_Resize.setRequestFocusEnabled(false);
 			jButton_Resize.setFocusPainted(false);
 			jButton_Resize.setText(" |_| ");
-			jButton_Resize.addActionListener(new java.awt.event.ActionListener() {
-				public void actionPerformed(java.awt.event.ActionEvent e) {
-				//	getJWindow().setState(jWindow.ICONIFIED);
-				}
-			});
 		}
 		return jButton_Resize;
 	}
@@ -220,7 +215,7 @@ public class DiskOptimizationApp {
 	public static JTextArea getJTextArea() {
 		if (jTextArea == null) {
 			jTextArea = new JTextArea();
-			jTextArea.setText("Select a File");
+			jTextArea.setText("test");
 			jTextArea.setEditable(true);
 			jTextArea.setEnabled(true);
 			jTextArea.setFocusable(true);
