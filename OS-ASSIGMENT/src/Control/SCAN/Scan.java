@@ -1,11 +1,35 @@
 package Control.SCAN;
 
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Font;
 import java.util.Arrays;
+
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.renderer.category.LineAndShapeRenderer;
+import org.jfree.chart.title.TextTitle;
+import org.jfree.data.category.CategoryDataset;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.ui.HorizontalAlignment;
+import org.jfree.ui.RectangleEdge;
+
+import View.DiskOptimizationApp;
 
 import Control.Reader.Reader;
 
 public class Scan {
-	Reader r;
+	static Reader r;
+	public static int sortedSequence[];
+	
+	
 	
 	public Scan(int current, int previous,int rawSequence[],Reader r){
 		this.r=r;
@@ -19,6 +43,8 @@ public class Scan {
 		Arrays.sort(scanSequence);
 		//sorts it in scan methods
 		SCAN(scanSequence,direction,r.getCurrent());
+		DiskOptimizationApp.jPanel_leftContent= null;
+		DiskOptimizationApp.jPanel_leftContent = createChart();
 	}
 	
 
@@ -52,7 +78,7 @@ public class Scan {
 	}
 
 	public void SCAN(int rawSequence[],int direction,int current){
-		int sortedSequence[]=new int[rawSequence.length];
+		sortedSequence=new int[rawSequence.length];
 				
 		if(direction==0)//going towards zero direction
 		{
@@ -116,7 +142,7 @@ public class Scan {
 			total+=d;
 			previous=current;
 		}
-		
+		DiskOptimizationApp.getJTextArea().setText("Method\t: SCAN"+'\n'+"-----------------\n"+"Order of Access\t: "+sequence+"\n"+"Total Distance\t= "+working1.substring(0,working1.length()-1)+"\n"+"              \t= "+working2.substring(0,working2.length()-2)+"\n"+"              \t= "+total+'\n');
 		System.out.println("Method\t: SCAN"+'\n'+"-----------------");
 		System.out.println("Order of Access\t: "+sequence);
 		System.out.println("Total Distance\t= "+working1.substring(0,working1.length()-1));
@@ -124,5 +150,60 @@ public class Scan {
 		System.out.println("              \t= "+total+'\n');
 		
 	}
+	
+	
+	  private static CategoryDataset createDataset()
+	    {
+		  	DefaultCategoryDataset defaultcategorydataset = new DefaultCategoryDataset();
+	        defaultcategorydataset.addValue(r.getCurrent(), "Classes", ""+0);
+	        
+	        for(int i=0; i<sortedSequence.length;i++){
+	        	 
+	        	   defaultcategorydataset.addValue(sortedSequence[i], "Classes", (i+1)+"");
+	        }
+	        return defaultcategorydataset;	
+	    }
+
+	    private static JFreeChart createChart(CategoryDataset categorydataset)
+	    {
+	        JFreeChart jfreechart = ChartFactory.createLineChart("SCAN", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
+	        jfreechart.addSubtitle(new TextTitle("By The Fantastic 4"));
+	        
+	        TextTitle texttitle = new TextTitle("Authors: A Ameenudeen,Adeel Ateeque,Lee Kai Quan,Shahrikin Alias");
+	        texttitle.setFont(new Font("SansSerif", 0, 10));
+	        texttitle.setPosition(RectangleEdge.BOTTOM);
+	        texttitle.setHorizontalAlignment(HorizontalAlignment.RIGHT);
+	        jfreechart.addSubtitle(texttitle);
+	        
+	        jfreechart.setBackgroundPaint(Color.white);
+	        CategoryPlot categoryplot = (CategoryPlot)jfreechart.getPlot();
+	        categoryplot.setBackgroundPaint(Color.lightGray);
+	        categoryplot.setRangeGridlinesVisible(false);
+	        java.net.URL url = (Scan.class).getClassLoader().getResource("OnBridge11small.png");
+	        if(url != null)
+	        {
+	            ImageIcon imageicon = new ImageIcon(url);
+	            jfreechart.setBackgroundImage(imageicon.getImage());
+	            categoryplot.setBackgroundPaint(new Color(0, 0, 0, 0));
+	        }
+	        NumberAxis numberaxis = (NumberAxis)categoryplot.getRangeAxis();
+	        numberaxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
+	        LineAndShapeRenderer lineandshaperenderer = (LineAndShapeRenderer)categoryplot.getRenderer();
+	        lineandshaperenderer.setShapesVisible(true);
+	        lineandshaperenderer.setDrawOutlines(true);
+	        lineandshaperenderer.setUseFillPaint(true);
+	        lineandshaperenderer.setBaseFillPaint(Color.white);
+	        lineandshaperenderer.setSeriesStroke(0, new BasicStroke(3F));
+	        lineandshaperenderer.setSeriesOutlineStroke(0, new BasicStroke(2.0F));
+	        lineandshaperenderer.setSeriesShape(0, new java.awt.geom.Ellipse2D.Double(-5D, -5D, 10D, 10D));
+	        return jfreechart;
+	    }
+
+	    public static JPanel createChart()
+	    {
+	        JFreeChart jfreechart = createChart(createDataset());
+	        return new ChartPanel(jfreechart);
+	    }
+
 
 }

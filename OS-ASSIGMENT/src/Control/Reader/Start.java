@@ -14,7 +14,6 @@ import Control.SSTF.SSTF;
 public class Start {
 	Properties p= new Properties();;
 	Reader r;
-	
 	public static void main(String args[]){
 		new Start("diskq1.Properties",1);
 		new Start("diskq1.Properties",2);

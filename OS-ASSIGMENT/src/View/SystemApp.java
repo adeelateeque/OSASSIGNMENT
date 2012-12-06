@@ -1,16 +1,11 @@
 package View;
 
-
-import java.awt.Color;
 import java.io.IOException;
-import java.util.Properties;
-import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-import java.util.*;
-
 public class SystemApp {
+	@SuppressWarnings({ "static-access" })
 	public static void main(String args[]) throws IOException{
 	 try {
 	        // Select the Look and Feel
@@ -29,9 +24,6 @@ public class SystemApp {
 	       // handle exception
 	    }
 	   
-	    		 
-	    DiskOptimizationApp app= new DiskOptimizationApp();
-		app.getJWindow().setVisible(true);
-		System.out.println("dsadasdas");
+	    DiskOptimizationApp.getJWindow().setVisible(true);
 	}
 }
