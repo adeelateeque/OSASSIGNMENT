@@ -1221,3 +1221,231 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
 	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
 	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
 	... 22 more
+!SESSION 2012-12-06 09:08:31.893 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-12-06 09:08:40.344
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ve.java.core 4 2 2012-12-06 09:09:02.081
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ve.java.core".
+!STACK 0
+java.util.ConcurrentModificationException
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.checkModCount(AbstractEList.java:762)
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.doNext(AbstractEList.java:710)
+	at org.eclipse.emf.common.util.AbstractEList$EIterator.next(AbstractEList.java:696)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:659)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoNature$2.getResource(BeaninfoNature.java:233)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResourceFromHandlers(ProjectResourceSetImpl.java:483)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.delegatedGetResource(ProjectResourceSetImpl.java:370)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:683)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$DefaultVEContributor.contributePalleteCats(JavaVisualEditorPart.java:1234)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$Setup$CreateRegistry$3.run(JavaVisualEditorPart.java:1694)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$Setup$CreateRegistry.run(JavaVisualEditorPart.java:1685)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 0 2012-12-06 09:09:07.447
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IndexOutOfBoundsException: Index: 1, Size: 1)
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3885)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3506)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$15.activeToolChanged(JavaVisualEditorPart.java:937)
+	at org.eclipse.gef.ui.palette.PaletteViewer.fireModeChanged(PaletteViewer.java:175)
+	at org.eclipse.gef.ui.palette.PaletteViewer.setActiveTool(PaletteViewer.java:385)
+	at org.eclipse.gef.EditDomain.loadDefaultTool(EditDomain.java:192)
+	at org.eclipse.gef.EditDomain.setPaletteRoot(EditDomain.java:343)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart.rebuildPalette(JavaVisualEditorPart.java:977)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$Setup$4.run(JavaVisualEditorPart.java:2131)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 22 more
+
+!ENTRY org.eclipse.ve.java.core 4 0 2012-12-06 09:11:47.071
+!MESSAGE Invalid PropertyDecorator
+
+!ENTRY org.eclipse.ve.java.core 2 0 2012-12-06 09:11:47.238
+!MESSAGE 
++++ Warning +++: Thu Dec 06 09:11:47 SGT 2012    Skipping expression: jPanel_leftContent.add(arg0)
+
+!ENTRY org.eclipse.ve.java.core 4 0 2012-12-06 09:11:47.243
+!MESSAGE Invalid PropertyDecorator
+
+!ENTRY org.eclipse.ve.java.core 4 0 2012-12-06 09:12:11.228
+!MESSAGE Exception thrown.
+!STACK 0
+java.lang.IllegalArgumentException: The feature 'focusOwner' is not a valid feature
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eOpenIsSet(BasicEObjectImpl.java:1290)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1243)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.shouldSaveFeature(XMLSaveImpl.java:1194)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1232)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2667)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1156)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1017)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2368)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1515)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2667)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1156)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1017)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2368)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1515)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2667)
+	at org.eclipse.emf.ecore.xmi.impl.XMISaveImpl.writeTopObjects(XMISaveImpl.java:90)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.traverse(XMLSaveImpl.java:592)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.save(XMLSaveImpl.java:256)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doSave(XMLResourceImpl.java:206)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1406)
+	at org.eclipse.ve.internal.java.codegen.util.VEModelCacheUtility.doSaveCache(VEModelCacheUtility.java:165)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.primDoSave(JavaSourceTranslator.java:1397)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.access$0(JavaSourceTranslator.java:1394)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator$4.doRun(JavaSourceTranslator.java:1418)
+	at org.eclipse.ve.internal.java.codegen.util.ReverseParserJob.run(ReverseParserJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ve.java.core 4 0 2012-12-06 09:12:51.814
+!MESSAGE Exception thrown.
+!STACK 0
+java.lang.IllegalArgumentException: The feature 'focusOwner' is not a valid feature
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eOpenIsSet(BasicEObjectImpl.java:1290)
+	at org.eclipse.emf.ecore.impl.BasicEObjectImpl.eIsSet(BasicEObjectImpl.java:1243)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.shouldSaveFeature(XMLSaveImpl.java:1194)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1232)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2667)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1156)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1017)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2368)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1515)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2667)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1156)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElement(XMLSaveImpl.java:1017)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveContainedMany(XMLSaveImpl.java:2368)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1515)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2667)
+	at org.eclipse.emf.ecore.xmi.impl.XMISaveImpl.writeTopObjects(XMISaveImpl.java:90)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.traverse(XMLSaveImpl.java:592)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.save(XMLSaveImpl.java:256)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doSave(XMLResourceImpl.java:206)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1406)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:993)
+	at org.eclipse.ve.internal.java.codegen.util.VEModelCacheUtility.doSaveCache(VEModelCacheUtility.java:158)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.primDoSave(JavaSourceTranslator.java:1397)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.access$0(JavaSourceTranslator.java:1394)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator$4.doRun(JavaSourceTranslator.java:1418)
+	at org.eclipse.ve.internal.java.codegen.util.ReverseParserJob.run(ReverseParserJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2012-12-06 09:42:47.208 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.jem.proxy 4 0 2012-12-06 09:43:05.890
+!MESSAGE 
+!STACK 0
+java.lang.RuntimeException: IWAV0066E No Standard Bean Proxy Factory has been set.
+	at org.eclipse.jem.internal.proxy.core.ProxyFactoryRegistry.getBeanProxyFactory(ProxyFactoryRegistry.java:159)
+	at org.eclipse.jem.internal.proxy.remote.REMCallbackThread.<init>(REMCallbackThread.java:78)
+	at org.eclipse.jem.internal.proxy.remote.REMCallbackRegistry.createCallback(REMCallbackRegistry.java:61)
+	at org.eclipse.jem.internal.proxy.remote.REMMasterServerThread.processRequest(REMMasterServerThread.java:143)
+	at org.eclipse.jem.internal.proxy.remote.REMMasterServerThread.run(REMMasterServerThread.java:80)
+
+!ENTRY org.eclipse.jem.proxy 2 0 2012-12-06 09:43:06.016
+!MESSAGE 
++++ Warning +++: Thu Dec 06 09:43:06 SGT 2012    Project (OS-ASSIGMENT)-VM for OS-ASSIGMENT:err>
+    java.io.EOFException
+    	at java.io.DataInputStream.readBoolean(Unknown Source)
+    	at org.eclipse.jem.internal.proxy.vm.remote.RemoteVMServerThread.requestCallbackSocket(RemoteVMServerThread.java:625)
+    	at org.eclipse.jem.internal.proxy.vm.remote.RemoteVMServerThread.createCallbackHandler(RemoteVMServerThread.java:504)
+    	at org.eclipse.jem.internal.proxy.vm.remote.RemoteVMServerThread.getFreeCallbackHandler(RemoteVMServerThread.java:496)
+    	at org.eclipse.jem.internal.proxy.vm.remote.RemoteVMServerThread.doCallback(RemoteVMServerThread.java:537)
+    	at org.eclipse.ve.internal.jfc.vm.ComponentManager$ComponentManagerFeedbackController.run(ComponentManager.java:546)
+    	at org.eclipse.jem.internal.proxy.common.GenericEventQueue$EventThread.run(GenericEventQueue.java:81)
+    org.eclipse.jem.internal.proxy.common.CommandException: No callback handler retrieved.
+    	at org.eclipse.jem.internal.proxy.vm.remote.RemoteVMServerThread.doCallback(RemoteVMServerThread.java:565)
+    	at org.eclipse.ve.internal.jfc.vm.ComponentManager$ComponentManagerFeedbackController.run(ComponentManager.java:546)
+    	at org.eclipse.jem.internal.proxy.common.GenericEventQueue$EventThread.run(GenericEventQueue.java:81)
+!SESSION 2012-12-06 10:11:54.217 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ve.java.core 4 0 2012-12-06 10:12:21.092
+!MESSAGE Exception thrown.
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.eclipse.emf.ecore.xmi.ClassNotFoundException: Class 'LayoutManager' is not found or is abstract. (file:/C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/.metadata/.plugins/org.eclipse.core.resources/.projects/OS-ASSIGMENT/org.eclipse.ve.java.core/.cache/emfmodel/src/View/DiskOptimizationApp.xmi, 2, 53416)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:315)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:706)
+	at org.eclipse.ve.internal.java.codegen.util.VEModelCacheUtility.doLoadFromCache(VEModelCacheUtility.java:103)
+	at org.eclipse.ve.internal.java.codegen.core.VEModelInstance.createComposition(VEModelInstance.java:100)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.reConnect(JavaSourceTranslator.java:1134)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.decodeDocument(JavaSourceTranslator.java:910)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.loadModel(JavaSourceTranslator.java:597)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$Setup.run(JavaVisualEditorPart.java:1978)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.emf.ecore.xmi.ClassNotFoundException: Class 'LayoutManager' is not found or is abstract. (file:/C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/.metadata/.plugins/org.eclipse.core.resources/.projects/OS-ASSIGMENT/org.eclipse.ve.java.core/.cache/emfmodel/src/View/DiskOptimizationApp.xmi, 2, 53416)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.validateCreateObjectFromFactory(XMLHandler.java:2243)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.validateCreateObjectFromFactory(XMLHandler.java:2367)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.createObjectFromTypeName(XMLHandler.java:2098)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.createObject(XMLHandler.java:2030)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.createObject(XMIHandler.java:134)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleFeature(XMLHandler.java:1839)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.processElement(XMLHandler.java:1023)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.processElement(XMIHandler.java:87)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:1001)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:712)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.startElement(XMIHandler.java:169)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:181)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:180)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1494)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1282)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:255)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:458)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:270)
+	... 8 more

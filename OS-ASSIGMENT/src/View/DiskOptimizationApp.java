@@ -3,9 +3,11 @@ package View;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import java.awt.BasicStroke;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Point;
 import javax.swing.JSplitPane;
 import java.awt.GridBagLayout;
@@ -13,6 +15,8 @@ import javax.swing.JWindow;
 import java.awt.ComponentOrientation;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
+
+import javax.swing.JFileChooser;
 import javax.swing.JToolBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
@@ -29,9 +33,22 @@ import javax.swing.JTextField;
 import javax.swing.BoxLayout;
 import javax.swing.JRadioButton;
 
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.renderer.category.LineAndShapeRenderer;
+import org.jfree.chart.title.TextTitle;
+import org.jfree.data.category.CategoryDataset;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.ui.HorizontalAlignment;
+import org.jfree.ui.RectangleEdge;
 import org.jfree.ui.RefineryUtilities;
 
 import Demo.LineChartDemo1;
+import java.awt.Rectangle;
 
 public class DiskOptimizationApp {
 	
@@ -56,11 +73,16 @@ public class DiskOptimizationApp {
 	private JRadioButton jRadioButton_CSCAN = null;
 	private JRadioButton jRadioButton_LOOK = null;
 	private JRadioButton jRadioButton_CLOOK = null;
+	private JSplitPane jSplitPane_right = null;
+	private JPanel jPanel_information = null;
+	final JFileChooser fc = new JFileChooser();
+	String fileName="";
+	
 	JWindow getJWindow() {
 		if (jWindow == null) {
 			jWindow = new JWindow(new JFrame());
 			jWindow.setFocusable(true);
-			jWindow.setSize(new Dimension(700, 400));
+			jWindow.setSize(new Dimension(1000, 700));
 			jWindow.setContentPane(getJContentPane());
 		}
 		return jWindow;
@@ -158,7 +180,7 @@ public class DiskOptimizationApp {
 			jSplitPane_left_right.setDividerSize(15);
 			jSplitPane_left_right.setBackground(Color.BLACK);
 			jSplitPane_left_right.setOrientation(JSplitPane.VERTICAL_SPLIT);
-			jSplitPane_left_right.setDividerLocation(300);
+			jSplitPane_left_right.setDividerLocation(500);
 			jSplitPane_left_right.setBottomComponent(getJPanel_WorkingHolder());
 			jSplitPane_left_right.setTopComponent(getJPanel_ContentHolder());
 		}
@@ -211,9 +233,9 @@ public class DiskOptimizationApp {
 	private JSplitPane getJSplitPane_Content() {
 		if (jSplitPane_Content == null) {
 			jSplitPane_Content = new JSplitPane();
-			jSplitPane_Content.setDividerLocation(500);
+			jSplitPane_Content.setDividerLocation(800);
+			jSplitPane_Content.setRightComponent(getJSplitPane_right());
 			jSplitPane_Content.setLeftComponent(getJPanel_leftContent());
-			jSplitPane_Content.setRightComponent(getJPanel_rightContent());
 		}
 		return jSplitPane_Content;
 	}
@@ -224,11 +246,88 @@ public class DiskOptimizationApp {
 	 */
 	private JPanel getJPanel_leftContent() {
 		if (jPanel_leftContent == null) {
-			jPanel_leftContent = new JPanel();
-			jPanel_leftContent.setLayout(new GridBagLayout());
+			jPanel_leftContent = createDemoPanel();
+			 LineChartDemo1 linechartdemo1 = new LineChartDemo1("OS Algorithm");
+		        
+			jPanel_leftContent.setLayout(null);
+			
 		}
 		return jPanel_leftContent;
 	}
+	  private static CategoryDataset createDataset()
+	    {
+	        DefaultCategoryDataset defaultcategorydataset = new DefaultCategoryDataset();
+	        defaultcategorydataset.addValue(86, "Classes", "");
+	        defaultcategorydataset.addValue(1470, "Classes", "JDK 1.1");
+	        defaultcategorydataset.addValue(913, "Classes", "JDK 1.2");
+	        defaultcategorydataset.addValue(1774, "Classes", "JDK 1.3");
+	        defaultcategorydataset.addValue(948, "Classes", "JDK 1.4");
+	        defaultcategorydataset.addValue(1509, "Classes", "JDK 1.5");
+	        
+//	        for(int i=0;i<5;i++)
+//	        {
+//	        	String test=""+i;
+//	        	defaultcategorydataset.addValue(2+i, "Classes",test );
+//	        }
+	        return defaultcategorydataset;
+	    }
+
+	    private static JFreeChart createChart(CategoryDataset categorydataset)
+	    {
+	        JFreeChart jfreechart = ChartFactory.createLineChart("C-SCAN/FCFS", null, "Track", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
+	        jfreechart.addSubtitle(new TextTitle("By The Fantastic 4"));
+	        
+	        TextTitle texttitle = new TextTitle("Authors: A Ameenudeen,Adeel Ateeque,Lee Kai Quan,Shahrikin Alias");
+	        texttitle.setFont(new Font("SansSerif", 0, 10));
+	        texttitle.setPosition(RectangleEdge.BOTTOM);
+	        texttitle.setHorizontalAlignment(HorizontalAlignment.RIGHT);
+	        jfreechart.addSubtitle(texttitle);
+	        
+	        jfreechart.setBackgroundPaint(Color.white);
+	        CategoryPlot categoryplot = (CategoryPlot)jfreechart.getPlot();
+	        categoryplot.setBackgroundPaint(Color.lightGray);
+	        categoryplot.setRangeGridlinesVisible(false);
+	        java.net.URL url = (Demo.LineChartDemo1.class).getClassLoader().getResource("OnBridge11small.png");
+	        if(url != null)
+	        {
+	            ImageIcon imageicon = new ImageIcon(url);
+	            jfreechart.setBackgroundImage(imageicon.getImage());
+	            categoryplot.setBackgroundPaint(new Color(0, 0, 0, 0));
+	        }
+	        NumberAxis numberaxis = (NumberAxis)categoryplot.getRangeAxis();
+	        numberaxis.setStandardTickUnits(NumberAxis.createIntegerTickUnits());
+	        LineAndShapeRenderer lineandshaperenderer = (LineAndShapeRenderer)categoryplot.getRenderer();
+	        lineandshaperenderer.setShapesVisible(true);
+	        lineandshaperenderer.setDrawOutlines(true);
+	        lineandshaperenderer.setUseFillPaint(true);
+	        lineandshaperenderer.setBaseFillPaint(Color.white);
+	        lineandshaperenderer.setSeriesStroke(0, new BasicStroke(3F));
+	        lineandshaperenderer.setSeriesOutlineStroke(0, new BasicStroke(2.0F));
+	        lineandshaperenderer.setSeriesShape(0, new java.awt.geom.Ellipse2D.Double(-5D, -5D, 10D, 10D));
+	        return jfreechart;
+	    }
+
+	    public static JPanel createDemoPanel()
+	    {
+	        JFreeChart jfreechart = createChart(createDataset());
+	        return new ChartPanel(jfreechart);
+	    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/**
 	 * This method initializes jPanel_rightContent	
 	 * 	
@@ -246,14 +345,25 @@ public class DiskOptimizationApp {
 			jPanel_rightContent.add(getJRadioButton_CSCAN(), null);
 			jPanel_rightContent.add(getJRadioButton_LOOK(), null);
 			jPanel_rightContent.add(getJRadioButton_CLOOK(), null);
+			
 		}
 		return jPanel_rightContent;
 	}
 	private JButton getJButton_Upload() {
 		if (jButton_Upload == null) {
 			jButton_Upload = new JButton();
-			
+			jButton_Upload.setSize(new Dimension(150,40));
+			jButton_Upload.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
+			jButton_Upload.setMinimumSize(new Dimension(100,40));
 			jButton_Upload.setText("UPLOAD FILE");
+			jButton_Upload.addActionListener(new java.awt.event.ActionListener() {
+				public void actionPerformed(java.awt.event.ActionEvent e) {
+					fc.showOpenDialog(fc);
+					final String path=fc.getSelectedFile().toString();
+					System.out.println(path);
+				}
+			});
+			
 		}
 		return jButton_Upload;
 	}
@@ -261,8 +371,9 @@ public class DiskOptimizationApp {
 		if (jRadioButton_FCFS == null) {
 			jRadioButton_FCFS = new JRadioButton();
 			jRadioButton_FCFS.setText("FCFS");
-			jRadioButton_FCFS.setSize(new Dimension(100,40));
-			jRadioButton_FCFS.setMaximumSize(new Dimension(100,40));
+			jRadioButton_FCFS.setSelected(true);
+			jRadioButton_FCFS.setSize(new Dimension(150,40));
+			jRadioButton_FCFS.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_FCFS.setMinimumSize(new Dimension(100,40));
 		}
 		return jRadioButton_FCFS;
@@ -278,6 +389,9 @@ public class DiskOptimizationApp {
 		if (jRadioButton_SCAN == null) {
 			jRadioButton_SCAN = new JRadioButton();
 			jRadioButton_SCAN.setText("SCAN");
+			jRadioButton_SCAN.setSize(new Dimension(150,40));
+			jRadioButton_SCAN.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
+			jRadioButton_SCAN.setMinimumSize(new Dimension(100,40));
 			
 		}
 		return jRadioButton_SCAN;
@@ -286,6 +400,9 @@ public class DiskOptimizationApp {
 		if (jRadioButton_CSCAN == null) {
 			jRadioButton_CSCAN = new JRadioButton();
 			jRadioButton_CSCAN.setText("CSCAN");
+			jRadioButton_CSCAN.setSize(new Dimension(150,40));
+			jRadioButton_CSCAN.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
+			jRadioButton_CSCAN.setMinimumSize(new Dimension(100,40));
 		}
 		return jRadioButton_CSCAN;
 	}
@@ -293,6 +410,9 @@ public class DiskOptimizationApp {
 		if (jRadioButton_LOOK == null) {
 			jRadioButton_LOOK = new JRadioButton();
 			jRadioButton_LOOK.setText("LOOK");
+			jRadioButton_LOOK.setSize(new Dimension(150,40));
+			jRadioButton_LOOK.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
+			jRadioButton_LOOK.setMinimumSize(new Dimension(100,40));
 		}
 		return jRadioButton_LOOK;
 	}
@@ -300,8 +420,38 @@ public class DiskOptimizationApp {
 		if (jRadioButton_CLOOK == null) {
 			jRadioButton_CLOOK = new JRadioButton();
 			jRadioButton_CLOOK.setText("CLOOK");
+			jRadioButton_CLOOK.setSize(new Dimension(150,40));
+			jRadioButton_CLOOK.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
+			jRadioButton_CLOOK.setMinimumSize(new Dimension(100,40));
 		}
 		return jRadioButton_CLOOK;
+	}
+	/**
+	 * This method initializes jSplitPane_right	
+	 * 	
+	 * @return javax.swing.JSplitPane	
+	 */
+	private JSplitPane getJSplitPane_right() {
+		if (jSplitPane_right == null) {
+			jSplitPane_right = new JSplitPane();
+			jSplitPane_right.setDividerLocation(250);
+			jSplitPane_right.setTopComponent(getJPanel_rightContent());
+			jSplitPane_right.setBottomComponent(getJPanel_information());
+			jSplitPane_right.setOrientation(JSplitPane.VERTICAL_SPLIT);
+		}
+		return jSplitPane_right;
+	}
+	/**
+	 * This method initializes jPanel_information	
+	 * 	
+	 * @return javax.swing.JPanel	
+	 */
+	private JPanel getJPanel_information() {
+		if (jPanel_information == null) {
+			jPanel_information = new JPanel();
+			jPanel_information.setLayout(new GridBagLayout());
+		}
+		return jPanel_information;
 	}
 
 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi">
+  <objectChanges xsi:type="change:EObjectToChangesMapEntry" key="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer">
+    <value xsi:type="change:FeatureChange" featureName="eAnnotations">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.0"/>
+    </value>
+    <value xsi:type="change:FeatureChange" featureName="eStructuralFeatures">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.1 #//@objectsToAttach.2 #//@objectsToAttach.3 #//@objectsToAttach.4 #//@objectsToAttach.5 #//@objectsToAttach.6 #//@objectsToAttach.7 #//@objectsToAttach.8 #//@objectsToAttach.9 #//@objectsToAttach.10 #//@objectsToAttach.11 #//@objectsToAttach.12 #//@objectsToAttach.13 #//@objectsToAttach.14"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xsi:type="ecore:EReference" name="legendItemLabelGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#CategorySeriesLabelGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getLegendItemLabelGenerator(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setLegendItemLabelGenerator(org.jfree.chart.labels.CategorySeriesLabelGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="legendItemToolTipGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#CategorySeriesLabelGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getLegendItemToolTipGenerator(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setLegendItemToolTipGenerator(org.jfree.chart.labels.CategorySeriesLabelGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseToolTipGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#CategoryToolTipGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getBaseToolTipGenerator(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setBaseToolTipGenerator(org.jfree.chart.labels.CategoryToolTipGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="rowCount" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getRowCount("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="plot" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.plot#CategoryPlot" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getPlot(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setPlot(org.jfree.chart.plot.CategoryPlot"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseItemLabelGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#CategoryItemLabelGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getBaseItemLabelGenerator(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setBaseItemLabelGenerator(org.jfree.chart.labels.CategoryItemLabelGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="passCount" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getPassCount("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="itemURLGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.urls#CategoryURLGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setItemURLGenerator(org.jfree.chart.urls.CategoryURLGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="columnCount" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getColumnCount("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="itemLabelGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#CategoryItemLabelGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setItemLabelGenerator(org.jfree.chart.labels.CategoryItemLabelGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="toolTipGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#CategoryToolTipGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getToolTipGenerator(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setToolTipGenerator(org.jfree.chart.labels.CategoryToolTipGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseItemURLGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.urls#CategoryURLGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getBaseItemURLGenerator(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setBaseItemURLGenerator(org.jfree.chart.urls.CategoryURLGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="legendItemURLGenerator" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#CategorySeriesLabelGenerator" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getLegendItemURLGenerator(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.setLegendItemURLGenerator(org.jfree.chart.labels.CategorySeriesLabelGenerator"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="legendItems" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart#LegendItemCollection" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer.category#AbstractCategoryItemRenderer.getLegendItems("/>
+  </objectsToAttach>
+</change:ChangeDescription>

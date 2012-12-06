@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi">
+  <objectChanges xsi:type="change:EObjectToChangesMapEntry" key="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.plot#Plot">
+    <value xsi:type="change:FeatureChange" featureName="eAnnotations">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.0"/>
+    </value>
+    <value xsi:type="change:FeatureChange" featureName="eStructuralFeatures">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.1 #//@objectsToAttach.2 #//@objectsToAttach.3 #//@objectsToAttach.4 #//@objectsToAttach.5 #//@objectsToAttach.6 #//@objectsToAttach.7 #//@objectsToAttach.8 #//@objectsToAttach.9 #//@objectsToAttach.10 #//@objectsToAttach.11 #//@objectsToAttach.12 #//@objectsToAttach.13 #//@objectsToAttach.14 #//@objectsToAttach.15 #//@objectsToAttach.16 #//@objectsToAttach.17 #//@objectsToAttach.18 #//@objectsToAttach.19 #//@objectsToAttach.20 #//@objectsToAttach.21"/>
+    </value>
+    <value xsi:type="change:FeatureChange" featureName="events">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.22"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xsi:type="ecore:EReference" name="backgroundImageAlpha" eType="org.eclipse.jem.java:JavaDataType java:/#float" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getBackgroundImageAlpha(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setBackgroundImageAlpha(float"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="outlineStroke" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Stroke" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getOutlineStroke(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setOutlineStroke(java.awt.Stroke"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="noDataMessagePaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getNoDataMessagePaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setNoDataMessagePaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="drawingSupplier" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.plot#DrawingSupplier" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getDrawingSupplier(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setDrawingSupplier(org.jfree.chart.plot.DrawingSupplier"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="subplot" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.isSubplot("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="parent" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.plot#Plot" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getParent(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setParent(org.jfree.chart.plot.Plot"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="backgroundImage" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Image" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getBackgroundImage(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setBackgroundImage(java.awt.Image"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="noDataMessageFont" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Font" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getNoDataMessageFont(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setNoDataMessageFont(java.awt.Font"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="noDataMessage" eType="org.eclipse.jem.java:JavaClass java:/java.lang#String" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getNoDataMessage(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setNoDataMessage(java.lang.String"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="rootPlot" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.plot#Plot" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getRootPlot("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="backgroundImageAlignment" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getBackgroundImageAlignment(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setBackgroundImageAlignment(int"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="backgroundPaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getBackgroundPaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setBackgroundPaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="backgroundAlpha" eType="org.eclipse.jem.java:JavaDataType java:/#float" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getBackgroundAlpha(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setBackgroundAlpha(float"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="outlineVisible" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.isOutlineVisible(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setOutlineVisible(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="notify" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.isNotify(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setNotify(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="insets" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.ui#RectangleInsets" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getInsets(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setInsets(org.jfree.ui.RectangleInsets"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="plotType" eType="org.eclipse.jem.java:JavaClass java:/java.lang#String" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getPlotType("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="outlinePaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getOutlinePaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setOutlinePaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="datasetGroup" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.data.general#DatasetGroup" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getDatasetGroup("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="legendItems" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart#LegendItemCollection" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getLegendItems("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="foregroundAlpha" eType="org.eclipse.jem.java:JavaDataType java:/#float" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.getForegroundAlpha(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.setForegroundAlpha(float"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanEvent" name="change">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:EventSetDecorator" implicitlySetBits="25" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" addListenerMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.addChangeListener(org.jfree.chart.event.PlotChangeListener" listenerType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.event#PlotChangeListener" removeListenerMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.plot#Plot.removeChangeListener(org.jfree.chart.event.PlotChangeListener"/>
+  </objectsToAttach>
+</change:ChangeDescription>

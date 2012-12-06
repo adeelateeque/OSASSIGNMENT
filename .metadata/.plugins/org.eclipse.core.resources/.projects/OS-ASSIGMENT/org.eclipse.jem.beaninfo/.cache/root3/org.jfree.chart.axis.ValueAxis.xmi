@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi">
+  <objectChanges xsi:type="change:EObjectToChangesMapEntry" key="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.axis#ValueAxis">
+    <value xsi:type="change:FeatureChange" featureName="eAnnotations">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.0"/>
+    </value>
+    <value xsi:type="change:FeatureChange" featureName="eStructuralFeatures">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.1 #//@objectsToAttach.2 #//@objectsToAttach.3 #//@objectsToAttach.4 #//@objectsToAttach.5 #//@objectsToAttach.6 #//@objectsToAttach.7 #//@objectsToAttach.8 #//@objectsToAttach.9 #//@objectsToAttach.10 #//@objectsToAttach.11 #//@objectsToAttach.12 #//@objectsToAttach.13 #//@objectsToAttach.14 #//@objectsToAttach.15 #//@objectsToAttach.16 #//@objectsToAttach.17 #//@objectsToAttach.18 #//@objectsToAttach.19 #//@objectsToAttach.20 #//@objectsToAttach.21"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xsi:type="ecore:EReference" name="lowerBound" eType="org.eclipse.jem.java:JavaDataType java:/#double" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getLowerBound(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setLowerBound(double"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="lowerMargin" eType="org.eclipse.jem.java:JavaDataType java:/#double" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getLowerMargin(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setLowerMargin(double"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="range" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.data#Range" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getRange(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setRange(org.jfree.data.Range"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="rightArrow" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Shape" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getRightArrow(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setRightArrow(java.awt.Shape"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="standardTickUnits" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.axis#TickUnitSource" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getStandardTickUnits(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setStandardTickUnits(org.jfree.chart.axis.TickUnitSource"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoTickUnitSelection" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.isAutoTickUnitSelection(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setAutoTickUnitSelection(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="upperMargin" eType="org.eclipse.jem.java:JavaDataType java:/#double" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getUpperMargin(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setUpperMargin(double"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="leftArrow" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Shape" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getLeftArrow(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setLeftArrow(java.awt.Shape"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="upArrow" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Shape" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getUpArrow(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setUpArrow(java.awt.Shape"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="inverted" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.isInverted(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setInverted(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoRangeMinimumSize" eType="org.eclipse.jem.java:JavaDataType java:/#double" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getAutoRangeMinimumSize(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setAutoRangeMinimumSize(double"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="rangeWithMargins" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.data#Range" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setRangeWithMargins(org.jfree.data.Range"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="fixedAutoRange" eType="org.eclipse.jem.java:JavaDataType java:/#double" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getFixedAutoRange(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setFixedAutoRange(double"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="negativeArrowVisible" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.isNegativeArrowVisible(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setNegativeArrowVisible(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="downArrow" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Shape" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getDownArrow(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setDownArrow(java.awt.Shape"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="verticalTickLabels" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.isVerticalTickLabels(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setVerticalTickLabels(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="upperBound" eType="org.eclipse.jem.java:JavaDataType java:/#double" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getUpperBound(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setUpperBound(double"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="defaultAutoRange" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.data#Range" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getDefaultAutoRange(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setDefaultAutoRange(org.jfree.data.Range"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="positiveArrowVisible" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.isPositiveArrowVisible(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setPositiveArrowVisible(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoRange" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.isAutoRange(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setAutoRange(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="minorTickCount" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.getMinorTickCount(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.axis#ValueAxis.setMinorTickCount(int"/>
+  </objectsToAttach>
+</change:ChangeDescription>

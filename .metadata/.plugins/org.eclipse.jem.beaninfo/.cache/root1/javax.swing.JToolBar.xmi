@@ -5,12 +5,13 @@
       <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.0"/>
     </value>
     <value xsi:type="change:FeatureChange" featureName="eStructuralFeatures">
-      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.1 #//@objectsToAttach.2 #//@objectsToAttach.3 #//@objectsToAttach.4 #//@objectsToAttach.5 #//@objectsToAttach.6"/>
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.1 #//@objectsToAttach.2 #//@objectsToAttach.3 #//@objectsToAttach.4 #//@objectsToAttach.5 #//@objectsToAttach.6 #//@objectsToAttach.7"/>
     </value>
   </objectChanges>
   <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" shortDescription="Provides component for commonly used Actions or controls" implicitlySetBits="6773413839565225998" implicitDecoratorFlag="IMPLICIT_DECORATOR" mergeSuperMethods="false">
     <attributes xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" key="ICON_COLOR_32x32" value="implicit,&quot;icons/jtoolb32.gif&quot;"/>
     <attributes xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" key="ICON_COLOR_16x16" value="implicit,&quot;icons/jtoolb16.gif&quot;"/>
+    <notInheritedPropertyNames>border</notInheritedPropertyNames>
     <notInheritedPropertyNames>layout</notInheritedPropertyNames>
   </objectsToAttach>
   <objectsToAttach xsi:type="ecore:EReference" name="UI" eType="org.eclipse.jem.java:JavaClass java:/javax.swing.plaf#ToolBarUI" unsettable="true">
@@ -32,5 +33,8 @@
     <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" shortDescription="Orientation of the toolbar...VERTICAL or HORIZONTAL" preferred="true" implicitlySetBits="6773413839565226044" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" bound="true" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JToolBar.getOrientation(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JToolBar.setOrientation(int">
       <attributes xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" key="enumerationValues" value="implicit,[6]{&quot;VERTICAL&quot;,1,&quot;javax.swing.JToolBar.VERTICAL&quot;,&quot;HORIZONTAL&quot;,0,&quot;javax.swing.JToolBar.HORIZONTAL&quot;}"/>
     </eAnnotations>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="border" eType="org.eclipse.jem.java:JavaClass java:/javax.swing.border#Border" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" shortDescription="Component's border" expert="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" bound="true" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JComponent.getBorder(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JComponent.setBorder(javax.swing.border.Border"/>
   </objectsToAttach>
 </change:ChangeDescription>

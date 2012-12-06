@@ -67,7 +67,7 @@ public class CLook {
 		output(sortedSequence);
 	}
 	
-	public void output(int sortedSequence[]){
+	public int [] output(int sortedSequence[]){
 		String sequence="";
 		String working1="";
 		String working2="";
@@ -93,5 +93,6 @@ public class CLook {
 		System.out.println("              \t= "+working2.substring(0,working2.length()-2));
 		System.out.println("              \t= "+total+'\n');
 		
+		return sortedSequence;
 	}
 }

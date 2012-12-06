@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi">
+  <objectChanges xsi:type="change:EObjectToChangesMapEntry" key="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.renderer#AbstractRenderer">
+    <value xsi:type="change:FeatureChange" featureName="eAnnotations">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.0"/>
+    </value>
+    <value xsi:type="change:FeatureChange" featureName="eStructuralFeatures">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.1 #//@objectsToAttach.2 #//@objectsToAttach.3 #//@objectsToAttach.4 #//@objectsToAttach.5 #//@objectsToAttach.6 #//@objectsToAttach.7 #//@objectsToAttach.8 #//@objectsToAttach.9 #//@objectsToAttach.10 #//@objectsToAttach.11 #//@objectsToAttach.12 #//@objectsToAttach.13 #//@objectsToAttach.14 #//@objectsToAttach.15 #//@objectsToAttach.16 #//@objectsToAttach.17 #//@objectsToAttach.18 #//@objectsToAttach.19 #//@objectsToAttach.20 #//@objectsToAttach.21 #//@objectsToAttach.22 #//@objectsToAttach.23 #//@objectsToAttach.24 #//@objectsToAttach.25 #//@objectsToAttach.26 #//@objectsToAttach.27 #//@objectsToAttach.28 #//@objectsToAttach.29 #//@objectsToAttach.30 #//@objectsToAttach.31 #//@objectsToAttach.32 #//@objectsToAttach.33 #//@objectsToAttach.34 #//@objectsToAttach.35 #//@objectsToAttach.36 #//@objectsToAttach.37 #//@objectsToAttach.38 #//@objectsToAttach.39 #//@objectsToAttach.40 #//@objectsToAttach.41"/>
+    </value>
+    <value xsi:type="change:FeatureChange" featureName="events">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.42"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseLegendTextPaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseLegendTextPaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseLegendTextPaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoPopulateSeriesOutlinePaint" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getAutoPopulateSeriesOutlinePaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setAutoPopulateSeriesOutlinePaint(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseSeriesVisibleInLegend" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseSeriesVisibleInLegend(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseSeriesVisibleInLegend(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="fillPaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setFillPaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseShape" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Shape" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseShape(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseShape(java.awt.Shape"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="stroke" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Stroke" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setStroke(java.awt.Stroke"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="itemLabelsVisible" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setItemLabelsVisible(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseOutlinePaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseOutlinePaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseOutlinePaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="seriesVisibleInLegend" eType="org.eclipse.jem.java:JavaClass java:/java.lang#Boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getSeriesVisibleInLegend(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setSeriesVisibleInLegend(java.lang.Boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="itemLabelAnchorOffset" eType="org.eclipse.jem.java:JavaDataType java:/#double" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getItemLabelAnchorOffset(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setItemLabelAnchorOffset(double"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="seriesVisible" eType="org.eclipse.jem.java:JavaClass java:/java.lang#Boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getSeriesVisible(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setSeriesVisible(java.lang.Boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="basePaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBasePaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBasePaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseLegendTextFont" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Font" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseLegendTextFont(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseLegendTextFont(java.awt.Font"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="paint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setPaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="positiveItemLabelPosition" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#ItemLabelPosition" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getPositiveItemLabelPosition(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setPositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="shape" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Shape" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setShape(java.awt.Shape"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="defaultEntityRadius" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getDefaultEntityRadius(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setDefaultEntityRadius(int"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseItemLabelPaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseItemLabelPaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseItemLabelPaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseFillPaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseFillPaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseFillPaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="itemLabelPaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getItemLabelPaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setItemLabelPaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseOutlineStroke" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Stroke" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseOutlineStroke(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseOutlineStroke(java.awt.Stroke"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="drawingSupplier" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.plot#DrawingSupplier" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getDrawingSupplier("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoPopulateSeriesPaint" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getAutoPopulateSeriesPaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setAutoPopulateSeriesPaint(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseCreateEntities" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseCreateEntities(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseCreateEntities(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoPopulateSeriesStroke" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getAutoPopulateSeriesStroke(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setAutoPopulateSeriesStroke(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="dataBoundsIncludesVisibleSeriesOnly" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getDataBoundsIncludesVisibleSeriesOnly(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setDataBoundsIncludesVisibleSeriesOnly(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="itemLabelFont" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Font" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getItemLabelFont(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setItemLabelFont(java.awt.Font"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseSeriesVisible" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseSeriesVisible(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseSeriesVisible(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseStroke" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Stroke" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseStroke(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseStroke(java.awt.Stroke"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseLegendShape" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Shape" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseLegendShape(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseLegendShape(java.awt.Shape"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="outlinePaint" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Paint" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setOutlinePaint(java.awt.Paint"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="createEntities" eType="org.eclipse.jem.java:JavaClass java:/java.lang#Boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getCreateEntities(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setCreateEntities(java.lang.Boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="negativeItemLabelPosition" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#ItemLabelPosition" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getNegativeItemLabelPosition(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoPopulateSeriesFillPaint" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getAutoPopulateSeriesFillPaint(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setAutoPopulateSeriesFillPaint(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseItemLabelFont" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Font" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseItemLabelFont(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseItemLabelFont(java.awt.Font"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseNegativeItemLabelPosition" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#ItemLabelPosition" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseNegativeItemLabelPosition(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseNegativeItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="outlineStroke" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Stroke" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setOutlineStroke(java.awt.Stroke"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="basePositiveItemLabelPosition" eType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.labels#ItemLabelPosition" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBasePositiveItemLabelPosition(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBasePositiveItemLabelPosition(org.jfree.chart.labels.ItemLabelPosition"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoPopulateSeriesOutlineStroke" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getAutoPopulateSeriesOutlineStroke(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setAutoPopulateSeriesOutlineStroke(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="baseItemLabelsVisible" eType="org.eclipse.jem.java:JavaClass java:/java.lang#Boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getBaseItemLabelsVisible(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setBaseItemLabelsVisible(java.lang.Boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="autoPopulateSeriesShape" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.getAutoPopulateSeriesShape(" writeMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.setAutoPopulateSeriesShape(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanEvent" name="change">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:EventSetDecorator" implicitlySetBits="25" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" addListenerMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.addChangeListener(org.jfree.chart.event.RendererChangeListener" listenerType="org.eclipse.jem.java:JavaClass java:/org.jfree.chart.event#RendererChangeListener" removeListenerMethod="org.eclipse.jem.java:Method java:/org.jfree.chart.renderer#AbstractRenderer.removeChangeListener(org.jfree.chart.event.RendererChangeListener"/>
+  </objectsToAttach>
+</change:ChangeDescription>
