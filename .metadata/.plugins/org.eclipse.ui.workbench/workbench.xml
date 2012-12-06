@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="34" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="322" y="47">
 <fastViewData fastViewLocation="1024">
@@ -20,7 +20,7 @@
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditor" itemType="typeToolBarContribution" x="268" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -31,13 +31,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditor" name="DiskOptimizationApp.java" partName="DiskOptimizationApp.java" path="C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/OS-ASSIGMENT/src/View/DiskOptimizationApp.java" title="DiskOptimizationApp.java" tooltip="OS-ASSIGMENT/src/View/DiskOptimizationApp.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SystemApp.java" partName="SystemApp.java" path="C:/Users/Ameen/Documents/GitHub/OSASSIGNMENT/OS-ASSIGMENT/src/View/SystemApp.java" title="SystemApp.java" tooltip="OS-ASSIGMENT/src/View/SystemApp.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OS-ASSIGMENT/src/View/SystemApp.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="490" selectionTopPixel="55"/>
+</editor>
+<editor id="org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditor" name="DiskOptimizationApp.java" partName="DiskOptimizationApp.java" path="C:/Users/Ameen/Documents/GitHub/OSASSIGNMENT/OS-ASSIGMENT/src/View/DiskOptimizationApp.java" title="DiskOptimizationApp.java" tooltip="OS-ASSIGMENT/src/View/DiskOptimizationApp.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OS-ASSIGMENT/src/View/DiskOptimizationApp.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="16897" selectionTopPixel="6511"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="17147" selectionTopPixel="6834"/>
 </editor>
 </editors>
 <views>
@@ -103,7 +108,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -236,136 +241,8 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditor" path="/OS-ASSIGMENT/src/View/DiskOptimizationApp.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/OS-ASSIGMENT/src/View/SystemApp.java"/>
 </editors>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="14402" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="15326" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="16245" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="12515" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="9625" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="12515" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="13476" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="14402" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="15326" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="9625" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="7790" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="7956" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="9625" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="12515" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="13476" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="14402" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="15326" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="16245" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="9625" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="12666" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="12515" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="9625" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="12515" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="13476" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="14402" y="0"/>
-</item>
-<item historyLabel="DiskOptimizationApp.java" index="0">
-<position/>
-</item>
 <item historyLabel="DiskOptimizationApp.java" index="0">
 <position info="not_deleted" x="15326" y="0"/>
 </item>
@@ -384,8 +261,137 @@
 <item historyLabel="DiskOptimizationApp.java" index="0">
 <position info="not_deleted" x="19111" y="0"/>
 </item>
-<item active="true" historyLabel="DiskOptimizationApp.java" index="0">
-<position info="not_deleted" x="3288" y="11"/>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="1857" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="9625" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="12767" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="13980" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="9625" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="10305" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="9625" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="9934" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="7790" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="9625" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="13779" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="17495" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="554" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="635" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="10239" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="10239" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="10676" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="10354" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="13457" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="16959" y="48"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="17377" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="17505" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="19821" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="20070" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="17505" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="19821" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="4212" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="17302" y="0"/>
+</item>
+<item historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="570" y="0"/>
+</item>
+<item historyLabel="DiskOptimizationApp.java" index="0">
+<position info="not_deleted" x="17147" y="0"/>
+</item>
+<item active="true" historyLabel="SystemApp.java" index="1">
+<position info="not_deleted" x="570" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -404,11 +410,14 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CLook.java" tooltip="OS-ASSIGMENT/src/Control/CLOOK/CLook.java">
-<persistable path="/OS-ASSIGMENT/src/Control/CLOOK/CLook.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditor" name="DiskOptimizationApp.java" tooltip="OS-ASSIGMENT/src/View/DiskOptimizationApp.java">
 <persistable path="/OS-ASSIGMENT/src/View/DiskOptimizationApp.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SystemApp.java" tooltip="OS-ASSIGMENT/src/View/SystemApp.java">
+<persistable path="/OS-ASSIGMENT/src/View/SystemApp.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CLook.java" tooltip="OS-ASSIGMENT/src/Control/CLOOK/CLook.java">
+<persistable path="/OS-ASSIGMENT/src/Control/CLOOK/CLook.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FCFS.java" tooltip="OS-ASSIGMENT/src/Control/FCFS/FCFS.java">
 <persistable path="/OS-ASSIGMENT/src/Control/FCFS/FCFS.java"/>
@@ -424,9 +433,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SSTF.java" tooltip="OS-ASSIGMENT/src/Control/SSTF/SSTF.java">
 <persistable path="/OS-ASSIGMENT/src/Control/SSTF/SSTF.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SystemApp.java" tooltip="OS-ASSIGMENT/src/View/SystemApp.java">
-<persistable path="/OS-ASSIGMENT/src/View/SystemApp.java"/>
 </file>
 </mruList>
 </workbench>

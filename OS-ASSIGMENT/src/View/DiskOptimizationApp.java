@@ -290,8 +290,13 @@ public class DiskOptimizationApp {
 					choice=1;
 					System.out.println(choice);
 					}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 && !(fileName.equals(null)) ){
 						getJButton_Run().setEnabled(true);
+						getJRadioButton_SSTF().setSelected(false);
+						getJRadioButton_SCAN().setSelected(false);
+						getJRadioButton_CSCAN().setSelected(false);
+						getJRadioButton_LOOK().setSelected(false);
+						getJRadioButton_CLOOK().setSelected(false);
 					}
 					else getJButton_Run().setEnabled(false);
 					
@@ -369,8 +374,13 @@ public class DiskOptimizationApp {
 						choice=2;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 && !(fileName.equals(null)) ){
 						getJButton_Run().setEnabled(true);
+						getJRadioButton_FCFS().setSelected(false);
+						getJRadioButton_SCAN().setSelected(false);
+						getJRadioButton_CSCAN().setSelected(false);
+						getJRadioButton_LOOK().setSelected(false);
+						getJRadioButton_CLOOK().setSelected(false);
 					}
 					else getJButton_Run().setEnabled(false);
 				}
@@ -393,8 +403,13 @@ public class DiskOptimizationApp {
 						choice=3;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 && !(fileName.equals(null)) ){
 						getJButton_Run().setEnabled(true);
+						getJRadioButton_SSTF().setSelected(false);
+						getJRadioButton_FCFS().setSelected(false);
+						getJRadioButton_CSCAN().setSelected(false);
+						getJRadioButton_LOOK().setSelected(false);
+						getJRadioButton_CLOOK().setSelected(false);
 					}
 					else getJButton_Run().setEnabled(false);
 				}
@@ -417,8 +432,13 @@ public class DiskOptimizationApp {
 						choice=4;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 && !(fileName.equals(null)) ){
 						getJButton_Run().setEnabled(true);
+						getJRadioButton_SSTF().setSelected(false);
+						getJRadioButton_SCAN().setSelected(false);
+						getJRadioButton_FCFS().setSelected(false);
+						getJRadioButton_LOOK().setSelected(false);
+						getJRadioButton_CLOOK().setSelected(false);
 					}
 					else getJButton_Run().setEnabled(false);
 				}
@@ -441,8 +461,13 @@ public class DiskOptimizationApp {
 						choice=5;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 && !(fileName.equals(null)) ){
 						getJButton_Run().setEnabled(true);
+						getJRadioButton_SSTF().setSelected(false);
+						getJRadioButton_SCAN().setSelected(false);
+						getJRadioButton_CSCAN().setSelected(false);
+						getJRadioButton_FCFS().setSelected(false);
+						getJRadioButton_CLOOK().setSelected(false);	
 					}
 					else getJButton_Run().setEnabled(false);
 				}

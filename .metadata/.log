@@ -5474,3 +5474,264 @@ Caused by: org.eclipse.emf.ecore.xmi.ClassNotFoundException: Class 'LayoutManage
 	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:458)
 	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:270)
 	... 8 more
+!SESSION 2012-12-06 19:35:40.271 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.7.0_09
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ve.java.core 4 16 2012-12-06 19:36:01.710
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+!STACK 1
+org.eclipse.core.runtime.CoreException: The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1345)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1331)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:919)
+	at org.eclipse.jdt.internal.launching.DefaultEntryResolver.resolveRuntimeClasspathEntry(DefaultEntryResolver.java:38)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:924)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.resolveClasspath(StandardClasspathProvider.java:75)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1205)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspath(AbstractJavaLaunchConfigurationDelegate.java:417)
+	at org.eclipse.jem.internal.proxy.remote.LocalProxyLaunchDelegate.launch(LocalProxyLaunchDelegate.java:113)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:696)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:463)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:330)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:262)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorVMController$CreateRegistry.run(JavaVisualEditorVMController.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2012-12-06 19:36:01.725
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.ve.java.core 4 16 2012-12-06 19:36:01.803
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+!STACK 1
+org.eclipse.core.runtime.CoreException: The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorVMController$PerProject.getSpare(JavaVisualEditorVMController.java:298)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorVMController.getRegistry(JavaVisualEditorVMController.java:579)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$Setup$CreateRegistry.run(JavaVisualEditorPart.java:1640)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.runtime.CoreException: The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1345)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1331)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:919)
+	at org.eclipse.jdt.internal.launching.DefaultEntryResolver.resolveRuntimeClasspathEntry(DefaultEntryResolver.java:38)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:924)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.resolveClasspath(StandardClasspathProvider.java:75)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1205)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspath(AbstractJavaLaunchConfigurationDelegate.java:417)
+	at org.eclipse.jem.internal.proxy.remote.LocalProxyLaunchDelegate.launch(LocalProxyLaunchDelegate.java:113)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:696)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:463)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:330)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:262)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorVMController$CreateRegistry.run(JavaVisualEditorVMController.java:188)
+	... 1 more
+!SUBENTRY 1 org.eclipse.ve.java.core 4 16 2012-12-06 19:36:01.803
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+!STACK 1
+org.eclipse.core.runtime.CoreException: The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1345)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1331)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:919)
+	at org.eclipse.jdt.internal.launching.DefaultEntryResolver.resolveRuntimeClasspathEntry(DefaultEntryResolver.java:38)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:924)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.resolveClasspath(StandardClasspathProvider.java:75)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1205)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspath(AbstractJavaLaunchConfigurationDelegate.java:417)
+	at org.eclipse.jem.internal.proxy.remote.LocalProxyLaunchDelegate.launch(LocalProxyLaunchDelegate.java:113)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:696)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:463)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:330)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:262)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorVMController$CreateRegistry.run(JavaVisualEditorVMController.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.jdt.launching 4 150 2012-12-06 19:36:01.803
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.ve.java.core 4 16 2012-12-06 19:36:03.428
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+!STACK 1
+org.eclipse.core.runtime.CoreException: The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1345)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1331)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:919)
+	at org.eclipse.jdt.internal.launching.DefaultEntryResolver.resolveRuntimeClasspathEntry(DefaultEntryResolver.java:38)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:924)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.resolveClasspath(StandardClasspathProvider.java:75)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1205)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspath(AbstractJavaLaunchConfigurationDelegate.java:417)
+	at org.eclipse.jem.internal.proxy.remote.LocalProxyLaunchDelegate.launch(LocalProxyLaunchDelegate.java:113)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:696)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:463)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:330)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:262)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorVMController$CreateRegistry.run(JavaVisualEditorVMController.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2012-12-06 19:36:03.428
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.ve.java.core 4 16 2012-12-06 19:36:03.428
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+!STACK 1
+org.eclipse.core.runtime.CoreException: The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1345)
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1331)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:919)
+	at org.eclipse.jdt.internal.launching.DefaultEntryResolver.resolveRuntimeClasspathEntry(DefaultEntryResolver.java:38)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspathEntry(JavaRuntime.java:924)
+	at org.eclipse.jdt.launching.StandardClasspathProvider.resolveClasspath(StandardClasspathProvider.java:75)
+	at org.eclipse.jdt.launching.JavaRuntime.resolveRuntimeClasspath(JavaRuntime.java:1205)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getClasspath(AbstractJavaLaunchConfigurationDelegate.java:417)
+	at org.eclipse.jem.internal.proxy.remote.LocalProxyLaunchDelegate.launch(LocalProxyLaunchDelegate.java:113)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:696)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:463)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:330)
+	at org.eclipse.jem.internal.proxy.core.ProxyLaunchSupport.startImplementation(ProxyLaunchSupport.java:262)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorVMController$CreateRegistry.run(JavaVisualEditorVMController.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2012-12-06 19:36:03.428
+!MESSAGE The archive: /OS-ASSIGMENT/lib/gnujaxp.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.ui 4 0 2012-12-06 19:36:03.460
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: 0)
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3885)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3506)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 0
+	at org.eclipse.ve.internal.java.codegen.util.CodeGenUtil.getMainType(CodeGenUtil.java:204)
+	at org.eclipse.ve.internal.java.codegen.util.WorkingCopyProvider.getResolver(WorkingCopyProvider.java:121)
+	at org.eclipse.ve.internal.java.codegen.util.WorkingCopyProvider.primDisconnect(WorkingCopyProvider.java:146)
+	at org.eclipse.ve.internal.java.codegen.util.WorkingCopyProvider.disconnect(WorkingCopyProvider.java:167)
+	at org.eclipse.ve.internal.java.codegen.util.WorkingCopyProvider.dispose(WorkingCopyProvider.java:156)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.dispose(JavaSourceTranslator.java:1200)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$20.run(JavaVisualEditorPart.java:1167)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 22 more
+
+!ENTRY org.eclipse.jem.proxy 2 0 2012-12-06 20:06:26.460
+!MESSAGE No Server to retrieve a connection.
+
+!ENTRY org.eclipse.jem.beaninfo 2 0 2012-12-06 20:06:26.460
+!MESSAGE IWAV0155E Introspection failed on class "java.lang.Object." msg="."
+!STACK 0
+java.lang.IllegalStateException: IWAV0171E Could not create a socket connection to remote vm. This is often due to your firewall blocking access from your java to do local access.
+	at org.eclipse.jem.internal.proxy.remote.REMProxyFactoryRegistry.createConnection(REMProxyFactoryRegistry.java:441)
+	at org.eclipse.jem.internal.proxy.remote.REMProxyFactoryRegistry.getFreeConnection(REMProxyFactoryRegistry.java:376)
+	at org.eclipse.jem.internal.proxy.remote.REMMethodProxy.invokeWithParms(REMMethodProxy.java:119)
+	at org.eclipse.jem.internal.proxy.remote.REMMethodProxy.invoke(REMMethodProxy.java:102)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.introspect(BeaninfoClassAdapter.java:732)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.introspectIfNecessary(BeaninfoClassAdapter.java:428)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.introspectIfNecessary(BeaninfoClassAdapter.java:415)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.getEStructuralFeatures(BeaninfoClassAdapter.java:1235)
+	at org.eclipse.jem.java.internal.impl.JavaClassImpl.getEStructuralFeatures(JavaClassImpl.java:379)
+	at org.eclipse.emf.ecore.impl.EClassImpl.getEAllAttributes(EClassImpl.java:584)
+	at org.eclipse.emf.ecore.impl.EClassImpl.getEAllAttributes(EClassImpl.java:580)
+	at org.eclipse.emf.ecore.impl.EClassImpl.getEAllAttributes(EClassImpl.java:580)
+	at org.eclipse.emf.ecore.impl.EClassImpl.getEAllAttributes(EClassImpl.java:580)
+	at org.eclipse.emf.ecore.impl.EClassImpl.getEAllAttributes(EClassImpl.java:580)
+	at org.eclipse.emf.ecore.impl.EClassImpl.getEIDAttribute(EClassImpl.java:177)
+	at org.eclipse.emf.ecore.util.EcoreUtil.getID(EcoreUtil.java:3284)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.getURIFragment(ResourceImpl.java:660)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.getURIFragment(XMLResourceImpl.java:423)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl.getURIFragment(XMLHelperImpl.java:718)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHelperImpl.getIDREF(XMLHelperImpl.java:753)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveIDRefMany(XMLSaveImpl.java:1985)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveFeatures(XMLSaveImpl.java:1337)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.saveElementID(XMLSaveImpl.java:2667)
+	at org.eclipse.emf.ecore.xmi.impl.XMISaveImpl.writeTopObjects(XMISaveImpl.java:90)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.traverse(XMLSaveImpl.java:592)
+	at org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl.save(XMLSaveImpl.java:256)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doSave(XMLResourceImpl.java:206)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:1406)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:993)
+	at org.eclipse.ve.internal.java.codegen.util.VEModelCacheUtility.doSaveCache(VEModelCacheUtility.java:158)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.primDoSave(JavaSourceTranslator.java:1397)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.access$0(JavaSourceTranslator.java:1394)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator$4.doRun(JavaSourceTranslator.java:1418)
+	at org.eclipse.ve.internal.java.codegen.util.ReverseParserJob.run(ReverseParserJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jem.proxy 2 0 2012-12-06 20:06:26.882
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jem.internal.proxy.remote.REMAbstractBeanTypeProxy.renderBean(REMAbstractBeanTypeProxy.java:615)
+	at org.eclipse.jem.internal.proxy.remote.REMMethodProxy$1$Retriever.nextValue(REMMethodProxy.java:147)
+	at org.eclipse.jem.internal.proxy.common.remote.Commands.writeValue(Commands.java:1005)
+	at org.eclipse.jem.internal.proxy.common.remote.Commands.writeValue(Commands.java:920)
+	at org.eclipse.jem.internal.proxy.common.remote.Commands.sendInvokeMethodCommand(Commands.java:1401)
+	at org.eclipse.jem.internal.proxy.remote.REMConnection.invokeMethod(REMConnection.java:208)
+	at org.eclipse.jem.internal.proxy.remote.REMMethodProxy.invoke(REMMethodProxy.java:219)
+	at org.eclipse.jem.internal.proxy.remote.REMMethodProxy.invokeWithParms(REMMethodProxy.java:189)
+	at org.eclipse.jem.internal.proxy.remote.REMMethodProxy.invoke(REMMethodProxy.java:102)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.introspect(BeaninfoClassAdapter.java:732)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.introspectIfNecessary(BeaninfoClassAdapter.java:428)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.introspectIfNecessary(BeaninfoClassAdapter.java:415)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.getEStructuralFeatures(BeaninfoClassAdapter.java:1235)
+	at org.eclipse.jem.java.internal.impl.JavaClassImpl.getEStructuralFeatures(JavaClassImpl.java:379)
+	at org.eclipse.jem.java.internal.impl.JavaClassImpl.getProperties(JavaClassImpl.java:1530)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.allProperties(BeaninfoClassAdapter.java:1364)
+	at org.eclipse.jem.internal.beaninfo.adapters.BeaninfoClassAdapter.getAllProperties(BeaninfoClassAdapter.java:1243)
+	at org.eclipse.jem.java.internal.impl.JavaClassImpl.getAllProperties(JavaClassImpl.java:1571)
+	at org.eclipse.ve.internal.java.codegen.java.rules.ThisReferenceRule.useInheritance(ThisReferenceRule.java:114)
+	at org.eclipse.ve.internal.java.codegen.java.TypeVisitor.createThisIfNecessary(TypeVisitor.java:115)
+	at org.eclipse.ve.internal.java.codegen.java.TypeVisitor.visit(TypeVisitor.java:252)
+	at org.eclipse.ve.internal.java.codegen.java.CodeSnippetModelBuilder.visitType(CodeSnippetModelBuilder.java:105)
+	at org.eclipse.ve.internal.java.codegen.java.JavaBeanModelBuilder.build(JavaBeanModelBuilder.java:443)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator$SharedToLocalUpdater.handleParseable(JavaSourceTranslator.java:429)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator$SharedToLocalUpdater.run(JavaSourceTranslator.java:502)
+	at org.eclipse.ve.internal.java.codegen.java.SnippetParseJob.doRun(SnippetParseJob.java:92)
+	at org.eclipse.ve.internal.java.codegen.util.ReverseParserJob.run(ReverseParserJob.java:56)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jem.proxy 2 0 2012-12-06 20:06:26.991
+!MESSAGE 
++++ Warning +++: Thu Dec 06 20:06:26 GMT 2012    Project (OS-ASSIGMENT)-Beaninfo:err>
+    java.io.EOFException
+    	at java.io.DataInputStream.readInt(Unknown Source)
+    	at org.eclipse.jem.internal.proxy.common.remote.Commands.readValue(Commands.java:757)
+    	at org.eclipse.jem.internal.proxy.common.remote.Commands.readArray(Commands.java:862)
+    	at org.eclipse.jem.internal.proxy.vm.remote.ConnectionHandler.run(ConnectionHandler.java:332)
+    	at org.eclipse.jem.internal.proxy.vm.remote.ConnectionThread.run(ConnectionThread.java:47)
+    java.io.EOFException
+    	at java.io.DataInputStream.readInt(Unknown Source)
+    	at org.eclipse.jem.internal.proxy.common.remote.Commands.readValue(Commands.java:757)
+    	at org.eclipse.jem.internal.proxy.common.remote.Commands.readArray(Commands.java:862)
+    	at org.eclipse.jem.internal.proxy.vm.remote.ConnectionHandler.run(ConnectionHandler.java:332)
+    	at org.eclipse.jem.internal.proxy.vm.remote.ConnectionThread.run(ConnectionThread.java:47)
