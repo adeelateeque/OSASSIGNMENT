@@ -74,7 +74,7 @@ public class DiskOptimizationApp {
 	private static JSplitPane jSplitPane_Content = null;
 	public static JPanel jPanel_leftContent = null;
 	final static JFileChooser fc = new JFileChooser();
-	static String fileName=null;  //  @jve:decl-index=0:
+	static String fileName="";  //  @jve:decl-index=0:
 	private JButton jButton_Compute = null;
 	private static JPanel jPanel_Options = null;
 	private static JRadioButton jRadioButton_FCFS = null;
@@ -86,7 +86,7 @@ public class DiskOptimizationApp {
 	private JPanel jPanel_buttons = null;  //  @jve:decl-index=0:visual-constraint="552,90"
 	private static JButton jButton_Upload = null;
 	private static JButton jButton_Run = null;
-	private static int choice=0;
+	private static int choice;
 	
 	static JWindow getJWindow() {
 		if (jWindow == null) {
@@ -290,7 +290,7 @@ public class DiskOptimizationApp {
 					choice=1;
 					System.out.println(choice);
 					}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 && !fileName.equals(null) ){
 						getJButton_Run().setEnabled(true);
 					}
 					else getJButton_Run().setEnabled(false);
@@ -369,10 +369,6 @@ public class DiskOptimizationApp {
 						choice=2;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
-						getJButton_Run().setEnabled(true);
-					}
-					else getJButton_Run().setEnabled(false);
 				}
 			});
 		}
@@ -393,10 +389,6 @@ public class DiskOptimizationApp {
 						choice=3;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
-						getJButton_Run().setEnabled(true);
-					}
-					else getJButton_Run().setEnabled(false);
 				}
 			});
 			
@@ -417,10 +409,6 @@ public class DiskOptimizationApp {
 						choice=4;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
-						getJButton_Run().setEnabled(true);
-					}
-					else getJButton_Run().setEnabled(false);
 				}
 			});
 		}
@@ -441,10 +429,6 @@ public class DiskOptimizationApp {
 						choice=5;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
-						getJButton_Run().setEnabled(true);
-					}
-					else getJButton_Run().setEnabled(false);
 				}
 			});
 		}
@@ -509,12 +493,6 @@ public class DiskOptimizationApp {
 					}
 					catch(Exception error){
 						System.out.println("please upload a file");
-					}
-					finally{
-						if(choice!=0 || !(fileName.equals(null)) ){
-							getJButton_Run().setEnabled(true);
-						}
-						else getJButton_Run().setEnabled(false);
 					}
 				}
 			});

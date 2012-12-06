@@ -5421,3 +5421,56 @@ org.eclipse.swt.SWTException: Device is disposed
 	at org.eclipse.ve.internal.cde.core.ModelChangeController.transactionEnded(ModelChangeController.java:409)
 	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$Setup.run(JavaVisualEditorPart.java:2123)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2012-12-06 15:28:15.524 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ve.java.core 4 0 2012-12-06 15:28:30.258
+!MESSAGE Exception thrown.
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.eclipse.emf.ecore.xmi.ClassNotFoundException: Class 'LayoutManager' is not found or is abstract. (file:/C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/.metadata/.plugins/org.eclipse.core.resources/.projects/OS-ASSIGMENT/org.eclipse.ve.java.core/.cache/emfmodel/src/View/DiskOptimizationApp.xmi, 2, 43770)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:315)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.getResource(ProjectResourceSetImpl.java:706)
+	at org.eclipse.ve.internal.java.codegen.util.VEModelCacheUtility.doLoadFromCache(VEModelCacheUtility.java:103)
+	at org.eclipse.ve.internal.java.codegen.core.VEModelInstance.createComposition(VEModelInstance.java:100)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.reConnect(JavaSourceTranslator.java:1134)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.decodeDocument(JavaSourceTranslator.java:910)
+	at org.eclipse.ve.internal.java.codegen.core.JavaSourceTranslator.loadModel(JavaSourceTranslator.java:597)
+	at org.eclipse.ve.internal.java.codegen.editorpart.JavaVisualEditorPart$Setup.run(JavaVisualEditorPart.java:1978)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.emf.ecore.xmi.ClassNotFoundException: Class 'LayoutManager' is not found or is abstract. (file:/C:/Users/MoistyBurger/Documents/GitHub/OSASSIGNMENT/.metadata/.plugins/org.eclipse.core.resources/.projects/OS-ASSIGMENT/org.eclipse.ve.java.core/.cache/emfmodel/src/View/DiskOptimizationApp.xmi, 2, 43770)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.validateCreateObjectFromFactory(XMLHandler.java:2243)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.validateCreateObjectFromFactory(XMLHandler.java:2367)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.createObjectFromTypeName(XMLHandler.java:2098)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.createObject(XMLHandler.java:2030)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.createObject(XMIHandler.java:134)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleFeature(XMLHandler.java:1839)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.processElement(XMLHandler.java:1023)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.processElement(XMIHandler.java:87)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:1001)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.startElement(XMLHandler.java:712)
+	at org.eclipse.emf.ecore.xmi.impl.XMIHandler.startElement(XMIHandler.java:169)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:181)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:180)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1494)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1282)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:255)
+	at org.eclipse.jem.internal.util.emf.workbench.ProjectResourceSetImpl.demandLoad(ProjectResourceSetImpl.java:458)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:270)
+	... 8 more

@@ -213,7 +213,7 @@ public class DiskOptimizationApp {
 	public static JTextArea getJTextArea() {
 		if (jTextArea == null) {
 			jTextArea = new JTextArea();
-			jTextArea.setText("test");
+			jTextArea.setText("Hello World...");
 			jTextArea.setEditable(true);
 			jTextArea.setEnabled(true);
 			jTextArea.setFocusable(true);
@@ -283,76 +283,20 @@ public class DiskOptimizationApp {
 			jRadioButton_FCFS.setSize(new Dimension(150,40));
 			jRadioButton_FCFS.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_FCFS.setMinimumSize(new Dimension(100,40));
-			jRadioButton_FCFS.addChangeListener(new javax.swing.event.ChangeListener() {
-				public void stateChanged(javax.swing.event.ChangeEvent e) {
-					
+			jRadioButton_FCFS.addItemListener(new java.awt.event.ItemListener() {
+				public void itemStateChanged(java.awt.event.ItemEvent e) {
+
 					if(jRadioButton_FCFS.isSelected()){
 					choice=1;
 					System.out.println(choice);
 					}
-					if(choice!=0 || !(fileName.equals(null)) ){
-						getJButton_Run().setEnabled(true);
-					}
-					else getJButton_Run().setEnabled(false);
-					
 				}
+				
 			});
 		}
 		return jRadioButton_FCFS;
 	}
-	protected static void methodChoices() {
-		if(getJRadioButton_FCFS().isSelected()){
-			choice=1;
-			getJRadioButton_SSTF().setSelected(false);
-			getJRadioButton_SCAN().setSelected(false);
-			getJRadioButton_CSCAN().setSelected(false);
-			getJRadioButton_LOOK().setSelected(false);
-			getJRadioButton_CLOOK().setSelected(false);
-		}
-		else if(getJRadioButton_SSTF().isSelected()){
-			choice=2;
-			getJRadioButton_FCFS().setSelected(false);
-			getJRadioButton_SCAN().setSelected(false);
-			getJRadioButton_CSCAN().setSelected(false);
-			getJRadioButton_LOOK().setSelected(false);
-			getJRadioButton_CLOOK().setSelected(false);
-		}
-		else if(getJRadioButton_SCAN().isSelected()){
-			choice=3;
-			getJRadioButton_SSTF().setSelected(false);
-			getJRadioButton_FCFS().setSelected(false);
-			getJRadioButton_CSCAN().setSelected(false);
-			getJRadioButton_LOOK().setSelected(false);
-			getJRadioButton_CLOOK().setSelected(false);
-		}
-		else if(getJRadioButton_CSCAN().isSelected()){
-			choice=4;
-			getJRadioButton_SSTF().setSelected(false);
-			getJRadioButton_SCAN().setSelected(false);
-			getJRadioButton_FCFS().setSelected(false);
-			getJRadioButton_LOOK().setSelected(false);
-			getJRadioButton_CLOOK().setSelected(false);
-		}
-		else if(getJRadioButton_LOOK().isSelected()){
-			choice=5;
-			getJRadioButton_SSTF().setSelected(false);
-			getJRadioButton_SCAN().setSelected(false);
-			getJRadioButton_CSCAN().setSelected(false);
-			getJRadioButton_FCFS().setSelected(false);
-			getJRadioButton_CLOOK().setSelected(false);	
-		}
-		else if(getJRadioButton_CLOOK().isSelected()){
-			choice=6;
-			getJRadioButton_SSTF().setSelected(false);
-			getJRadioButton_SCAN().setSelected(false);
-			getJRadioButton_CSCAN().setSelected(false);
-			getJRadioButton_LOOK().setSelected(false);
-			getJRadioButton_FCFS().setSelected(false);
-		}
-		
-		
 	
-	}
 	private static JRadioButton getJRadioButton_SSTF() {
 		if (jRadioButton_SSTF == null) {
 			jRadioButton_SSTF = new JRadioButton();
@@ -362,18 +306,15 @@ public class DiskOptimizationApp {
 			jRadioButton_SSTF.setSize(new Dimension(150,40));
 			jRadioButton_SSTF.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_SSTF.setMinimumSize(new Dimension(100,40));
-			jRadioButton_SSTF.addChangeListener(new javax.swing.event.ChangeListener() {
-				public void stateChanged(javax.swing.event.ChangeEvent e) {
-					
-					if(jRadioButton_SSTF.isSelected()){
-						choice=2;
-						System.out.println(choice);
-						}
-					if(choice!=0 || !(fileName.equals(null)) ){
-						getJButton_Run().setEnabled(true);
+			jRadioButton_SSTF.addItemListener(new java.awt.event.ItemListener() {
+				public void itemStateChanged(java.awt.event.ItemEvent e) {
+
+					if(jRadioButton_FCFS.isSelected()){
+					choice=1;
+					System.out.println(choice);
 					}
-					else getJButton_Run().setEnabled(false);
 				}
+				
 			});
 		}
 		return jRadioButton_SSTF;
@@ -386,18 +327,15 @@ public class DiskOptimizationApp {
 			jRadioButton_SCAN.setSize(new Dimension(150,40));
 			jRadioButton_SCAN.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_SCAN.setMinimumSize(new Dimension(100,40));
-			jRadioButton_SCAN.addChangeListener(new javax.swing.event.ChangeListener() {
-				public void stateChanged(javax.swing.event.ChangeEvent e) {
-			
-					if(jRadioButton_SCAN.isSelected()){
-						choice=3;
-						System.out.println(choice);
-						}
-					if(choice!=0 || !(fileName.equals(null)) ){
-						getJButton_Run().setEnabled(true);
+			jRadioButton_SCAN.addItemListener(new java.awt.event.ItemListener() {
+				public void itemStateChanged(java.awt.event.ItemEvent e) {
+
+					if(jRadioButton_FCFS.isSelected()){
+					choice=1;
+					System.out.println(choice);
 					}
-					else getJButton_Run().setEnabled(false);
 				}
+				
 			});
 			
 		}
@@ -411,17 +349,15 @@ public class DiskOptimizationApp {
 			jRadioButton_CSCAN.setSize(new Dimension(150,40));
 			jRadioButton_CSCAN.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_CSCAN.setMinimumSize(new Dimension(100,40));
-			jRadioButton_CSCAN.addChangeListener(new javax.swing.event.ChangeListener() {
-				public void stateChanged(javax.swing.event.ChangeEvent e) {
-					if(jRadioButton_CSCAN.isSelected()){
-						choice=4;
-						System.out.println(choice);
-						}
-					if(choice!=0 || !(fileName.equals(null)) ){
-						getJButton_Run().setEnabled(true);
+			jRadioButton_CSCAN.addItemListener(new java.awt.event.ItemListener() {
+				public void itemStateChanged(java.awt.event.ItemEvent e) {
+
+					if(jRadioButton_FCFS.isSelected()){
+					choice=1;
+					System.out.println(choice);
 					}
-					else getJButton_Run().setEnabled(false);
 				}
+				
 			});
 		}
 		return jRadioButton_CSCAN;
@@ -434,18 +370,20 @@ public class DiskOptimizationApp {
 			jRadioButton_LOOK.setSize(new Dimension(150,40));
 			jRadioButton_LOOK.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_LOOK.setMinimumSize(new Dimension(100,40));
-			jRadioButton_LOOK.addChangeListener(new javax.swing.event.ChangeListener() {
-				public void stateChanged(javax.swing.event.ChangeEvent e) {
-	
-					if(jRadioButton_LOOK.isSelected()){
-						choice=5;
-						System.out.println(choice);
-						}
+			jRadioButton_LOOK.addItemListener(new java.awt.event.ItemListener() {
+				public void itemStateChanged(java.awt.event.ItemEvent e) {
+
+					if(jRadioButton_FCFS.isSelected()){
+					choice=1;
+					System.out.println(choice);
+					}
 					if(choice!=0 || !(fileName.equals(null)) ){
 						getJButton_Run().setEnabled(true);
 					}
 					else getJButton_Run().setEnabled(false);
+					
 				}
+				
 			});
 		}
 		return jRadioButton_LOOK;
@@ -458,14 +396,20 @@ public class DiskOptimizationApp {
 			jRadioButton_CLOOK.setSize(new Dimension(150,40));
 			jRadioButton_CLOOK.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_CLOOK.setMinimumSize(new Dimension(100,40));
-			jRadioButton_CLOOK.addChangeListener(new javax.swing.event.ChangeListener() {
-				public void stateChanged(javax.swing.event.ChangeEvent e) {
+			jRadioButton_CLOOK.addItemListener(new java.awt.event.ItemListener() {
+				public void itemStateChanged(java.awt.event.ItemEvent e) {
+
+					if(jRadioButton_FCFS.isSelected()){
+					choice=1;
+					System.out.println(choice);
+					}
+					if(choice!=0 || !(fileName.equals(null)) ){
+						getJButton_Run().setEnabled(true);
+					}
+					else getJButton_Run().setEnabled(false);
 					
-					if(jRadioButton_CLOOK.isSelected()){
-						choice=6;
-						System.out.println(choice);
-						}
 				}
+				
 			});
 		}
 		return jRadioButton_CLOOK;

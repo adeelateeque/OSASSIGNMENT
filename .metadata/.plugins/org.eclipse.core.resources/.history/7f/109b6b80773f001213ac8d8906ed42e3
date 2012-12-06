@@ -290,7 +290,7 @@ public class DiskOptimizationApp {
 					choice=1;
 					System.out.println(choice);
 					}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 || !fileName.equals(null) ){
 						getJButton_Run().setEnabled(true);
 					}
 					else getJButton_Run().setEnabled(false);
@@ -369,7 +369,7 @@ public class DiskOptimizationApp {
 						choice=2;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 || !fileName.equals(null) ){
 						getJButton_Run().setEnabled(true);
 					}
 					else getJButton_Run().setEnabled(false);
@@ -393,7 +393,7 @@ public class DiskOptimizationApp {
 						choice=3;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 || !fileName.equals(null) ){
 						getJButton_Run().setEnabled(true);
 					}
 					else getJButton_Run().setEnabled(false);
@@ -417,7 +417,7 @@ public class DiskOptimizationApp {
 						choice=4;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 || !fileName.equals(null) ){
 						getJButton_Run().setEnabled(true);
 					}
 					else getJButton_Run().setEnabled(false);
@@ -441,7 +441,7 @@ public class DiskOptimizationApp {
 						choice=5;
 						System.out.println(choice);
 						}
-					if(choice!=0 || !(fileName.equals(null)) ){
+					if(choice!=0 || !fileName.equals(null) ){
 						getJButton_Run().setEnabled(true);
 					}
 					else getJButton_Run().setEnabled(false);
@@ -465,6 +465,10 @@ public class DiskOptimizationApp {
 						choice=6;
 						System.out.println(choice);
 						}
+					if(choice!=0 || !fileName.equals(null) ){
+						getJButton_Run().setEnabled(true);
+					}
+					else getJButton_Run().setEnabled(false);
 				}
 			});
 		}
@@ -511,7 +515,7 @@ public class DiskOptimizationApp {
 						System.out.println("please upload a file");
 					}
 					finally{
-						if(choice!=0 || !(fileName.equals(null)) ){
+						if(choice!=0 || !fileName.equals(null) ){
 							getJButton_Run().setEnabled(true);
 						}
 						else getJButton_Run().setEnabled(false);

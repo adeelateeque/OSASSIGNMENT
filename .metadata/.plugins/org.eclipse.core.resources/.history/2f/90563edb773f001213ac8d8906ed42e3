@@ -134,8 +134,7 @@ public class CLook {
 	        return defaultcategorydataset;
 	    }
 
-	    @SuppressWarnings("deprecation")
-		private static JFreeChart createChart(CategoryDataset categorydataset)
+	    private static JFreeChart createChart(CategoryDataset categorydataset)
 	    {
 	        JFreeChart jfreechart = ChartFactory.createLineChart("C-LOOK", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
 	        jfreechart.addSubtitle(new TextTitle("By The Fantastic 4"));

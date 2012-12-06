@@ -297,6 +297,11 @@ public class DiskOptimizationApp {
 					
 				}
 			});
+			jRadioButton_FCFS.addItemListener(new java.awt.event.ItemListener() {
+				public void itemStateChanged(java.awt.event.ItemEvent e) {
+					System.out.println("itemStateChanged()"); // TODO Auto-generated Event stub itemStateChanged()
+				}
+			});
 		}
 		return jRadioButton_FCFS;
 	}
@@ -465,6 +470,10 @@ public class DiskOptimizationApp {
 						choice=6;
 						System.out.println(choice);
 						}
+					if(choice!=0 || !(fileName.equals(null)) ){
+						getJButton_Run().setEnabled(true);
+					}
+					else getJButton_Run().setEnabled(false);
 				}
 			});
 		}

@@ -465,6 +465,10 @@ public class DiskOptimizationApp {
 						choice=6;
 						System.out.println(choice);
 						}
+					if(choice!=0 || !(fileName.equals(null)) ){
+						getJButton_Run().setEnabled(true);
+					}
+					else getJButton_Run().setEnabled(false);
 				}
 			});
 		}
