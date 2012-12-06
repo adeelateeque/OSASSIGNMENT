@@ -396,8 +396,8 @@ public class DiskOptimizationApp {
 			jRadioButton_SCAN.setSize(new Dimension(150,40));
 			jRadioButton_SCAN.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_SCAN.setMinimumSize(new Dimension(100,40));
-			jRadioButton_SCAN.addActionListener(new java.awt.event.ActionListener() {
-				public void actionPerformed(java.awt.event.ActionEvent e) {
+			jRadioButton_SCAN.addChangeListener(new javax.swing.event.ChangeListener() {
+				public void stateChanged(javax.swing.event.ChangeEvent e) {
 			
 					if(jRadioButton_SCAN.isSelected()){
 						choice=3;
@@ -426,8 +426,8 @@ public class DiskOptimizationApp {
 			jRadioButton_CSCAN.setSize(new Dimension(150,40));
 			jRadioButton_CSCAN.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_CSCAN.setMinimumSize(new Dimension(100,40));
-			jRadioButton_CSCAN.addActionListener(new java.awt.event.ActionListener()  {
-				public void actionPerformed(java.awt.event.ActionEvent e) {
+			jRadioButton_CSCAN.addChangeListener(new javax.swing.event.ChangeListener() {
+				public void stateChanged(javax.swing.event.ChangeEvent e) {
 					if(jRadioButton_CSCAN.isSelected()){
 						choice=4;
 						System.out.println(choice);
@@ -454,11 +454,9 @@ public class DiskOptimizationApp {
 			jRadioButton_LOOK.setSize(new Dimension(150,40));
 			jRadioButton_LOOK.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_LOOK.setMinimumSize(new Dimension(100,40));
-			
-			jRadioButton_LOOK.addActionListener(new java.awt.event.ActionListener()  {
-				public void actionPerformed(java.awt.event.ActionEvent e) {
-			
-				
+			jRadioButton_LOOK.addChangeListener(new javax.swing.event.ChangeListener() {
+				public void stateChanged(javax.swing.event.ChangeEvent e) {
+	
 					if(jRadioButton_LOOK.isSelected()){
 						choice=5;
 						System.out.println(choice);
