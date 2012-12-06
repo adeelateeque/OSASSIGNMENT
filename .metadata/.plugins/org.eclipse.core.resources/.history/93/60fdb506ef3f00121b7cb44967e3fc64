@@ -152,7 +152,7 @@ public class DiskOptimizationApp {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
 					getJWindow().setVisible(false);
 					getJWindow().removeAll();
-					
+					getJWindow().dispose();
 				}
 			});
 			jButton_close.setOpaque(false); 

@@ -94,7 +94,6 @@ public class DiskOptimizationApp {
 			jWindow.setFocusable(true);
 			jWindow.setSize(new Dimension(1000, 700));
 			jWindow.setContentPane(getJContentPane());
-			
 		}
 		return jWindow;
 	}
@@ -152,7 +151,6 @@ public class DiskOptimizationApp {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
 					getJWindow().setVisible(false);
 					getJWindow().removeAll();
-					
 				}
 			});
 			jButton_close.setOpaque(false); 

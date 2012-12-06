@@ -94,7 +94,6 @@ public class DiskOptimizationApp {
 			jWindow.setFocusable(true);
 			jWindow.setSize(new Dimension(1000, 700));
 			jWindow.setContentPane(getJContentPane());
-			
 		}
 		return jWindow;
 	}
@@ -152,7 +151,6 @@ public class DiskOptimizationApp {
 				public void actionPerformed(java.awt.event.ActionEvent e) {
 					getJWindow().setVisible(false);
 					getJWindow().removeAll();
-					
 				}
 			});
 			jButton_close.setOpaque(false); 
@@ -487,8 +485,8 @@ public class DiskOptimizationApp {
 			jRadioButton_CLOOK.setSize(new Dimension(150,40));
 			jRadioButton_CLOOK.setMaximumSize(new Dimension(getJWindow().getWidth()-getJSplitPane_Content().getDividerLocation(),40));
 			jRadioButton_CLOOK.setMinimumSize(new Dimension(100,40));
-			jRadioButton_CLOOK.addActionListener(new java.awt.event.ActionListener()  {
-				public void actionPerformed(java.awt.event.ActionEvent e) {
+			jRadioButton_CLOOK.addChangeListener(new javax.swing.event.ChangeListener() {
+				public void stateChanged(javax.swing.event.ChangeEvent e) {
 					
 					if(jRadioButton_CLOOK.isSelected()){
 						choice=6;
