@@ -33,10 +33,11 @@ public class FCFS {
 		String sequence="";
 		String working1="";
 		String working2="";
+		this.r=r;
 		int total=0;
 		sequence+=r.getCurrent();
 		int previous=r.getCurrent();
-		sortedSequence= new int[rawSequence.length];
+
 		for(int i=0; i<rawSequence.length;i++)
 		{
 			int current=rawSequence[i];
@@ -47,10 +48,15 @@ public class FCFS {
 			working2+=d+" + ";
 			total+=d;
 			previous=current;
-			sortedSequence[i]=rawSequence[i];
+			
 		}
-		DiskOptimizationApp.jPanel_leftContent= null;
-		DiskOptimizationApp.jPanel_leftContent = createChart();
+		
+		sortedSequence= new int[rawSequence.length];
+//		for(int i=0;i<rawSequence.length;i++){
+//			sortedSequence[i]=rawSequence[i];
+//		}
+		
+		sortedSequence=rawSequence;		
 		
 		
 		DiskOptimizationApp.getJTextArea().setText("Method\t: FCFS"+'\n'+"-----------------\n"+"Order of Access\t: "+sequence+"\n"+"Total Distance\t= "+working1.substring(0,working1.length()-1)+"\n"+"              \t= "+working2.substring(0,working2.length()-2)+"\n"+"              \t= "+total+'\n');
@@ -61,7 +67,8 @@ public class FCFS {
 		System.out.println("              \t= "+total+'\n');
 		
 		
-		//method to return the chart
+		DiskOptimizationApp.jPanel_leftContent= null;
+		DiskOptimizationApp.jPanel_leftContent = createChart();
 		
 		
 	}
@@ -81,7 +88,7 @@ public class FCFS {
 
 	    private static JFreeChart createChart(CategoryDataset categorydataset)
 	    {
-	        JFreeChart jfreechart = ChartFactory.createLineChart("C-LOOK", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
+	        JFreeChart jfreechart = ChartFactory.createLineChart("FCFS", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
 	        jfreechart.addSubtitle(new TextTitle("By The Fantastic 4"));
 	        
 	        TextTitle texttitle = new TextTitle("Authors: A Ameenudeen,Adeel Ateeque,Lee Kai Quan,Shahrikin Alias");

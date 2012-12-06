@@ -1,13 +1,11 @@
-package Control.SSTF;
+package Control.CLOOK;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Arrays;
 
 import javax.swing.ImageIcon;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import org.jfree.chart.ChartFactory;
@@ -23,69 +21,82 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.ui.HorizontalAlignment;
 import org.jfree.ui.RectangleEdge;
 
-
 import View.DiskOptimizationApp;
 
-import Control.CLOOK.CLook;
 import Control.Reader.Reader;
 
-
-public class SSTF extends JFrame{
+public class CLook {
 	static Reader r;
-	static int sortedSequence[];
+	public static int sortedSequence[];
 	
-	public int sstfValues[]= new int[18];
-	ArrayList<Integer> values = new ArrayList<Integer>();
-	
-	public SSTF(int current,int rawSequence[],Reader r){
+	public CLook(int current, int previous,int rawSequence[],Reader r){
 		this.r=r;
-		int n=rawSequence.length;
-		int sstf[]=new int[n];
-		sortedSequence= new int[rawSequence.length];
-		for(int i=0;i<n;i++)
-		{
-			sstf[i]=rawSequence[i];
-			
-		}
-		int ii=-1;
-		for(int i=0;i<n;i++)
-		{
-			int minimum=Integer.MAX_VALUE;
-			ii=i;
-			for(int j=i; j<n;j++)
-			{
-				int distance=Math.abs(current-sstf[j]);
-				if(distance<minimum)
-				{
-					ii=j;
-					minimum=distance;
-				}
-			}
-			int tmp=sstf[i];
-			sstf[i]=sstf[ii];
-			sstf[ii]=tmp;
-			
-		}
+		int direction=0;
+		int cScanSequence[] = rawSequence;
+		//finding the direction of the arrow..
+		if(previous>current){direction=0; };  // going towards zero
+		if(previous<current){direction=1;}  // going away from zero
 		
-		for(int i=0; i<sstf.length;i++){
-			sortedSequence[i]=sstf[i];
-		}
-		
-		
-		output(sstf);
+		//sorting the sequence in order
+		Arrays.sort(cScanSequence);
+		//sorts it in CLOOK methods
+		CLOOK(cScanSequence,direction,r.getCurrent());
 		
 		DiskOptimizationApp.jPanel_leftContent= null;
 		DiskOptimizationApp.jPanel_leftContent = createChart();
-		
-		
 	}
-  
-	public void output(int sortedSequence[] ){
+	
+	public void CLOOK(int[]rawSequence, int direction,int current){
+		sortedSequence=new int[rawSequence.length];
+		
+		if(direction==0)//going towards zero direction
+		{
+			//finding where the first point will be from
+			int startIndex = 1010;
+			for(int i=0;i<rawSequence.length;i++){
+				if(current<rawSequence[i]){startIndex=i; break;}
+			}
+			//sorting into CLOOK method
+			int filledIndex=0;
+			for(int i=startIndex-1;i>0;i--){
+				sortedSequence[filledIndex]=rawSequence[i];
+				filledIndex++;
+			}
+			for(int i=rawSequence.length-1; i>startIndex-1;i--){
+				sortedSequence[filledIndex+1]=rawSequence[i];
+				filledIndex++;
+			}
+		}
+		
+		if(direction==1)//going away from zero direction
+		{
+			//finding where the first point will be from
+			int startIndex = 1010;
+			for(int i=0;i<rawSequence.length;i++){
+				if(current<rawSequence[i]){startIndex=i; break;}
+				
+			}
+			
+			//sorting into CLOOK method
+			int filledIndex=0;
+			for(int i=startIndex;i<rawSequence.length;i++){
+				sortedSequence[filledIndex]=rawSequence[i];
+				filledIndex++;
+			}
+			for(int i=0;i<startIndex;i++){
+				sortedSequence[filledIndex]=rawSequence[i];
+				filledIndex++;
+			}
+		}
+		
+		output(sortedSequence);
+	}
+	
+	public int [] output(int sortedSequence[]){
 		String sequence="";
 		String working1="";
 		String working2="";
 		int total=0;
-		int newSortedSequence[]=new int[sortedSequence.length+1];
 		sequence+=r.getCurrent();
 		int previous=r.getCurrent();
 		
@@ -100,45 +111,32 @@ public class SSTF extends JFrame{
 			total+=d;
 			previous=current;
 		}
-		
-		Scanner sc = new Scanner(sequence);
-		sc.useDelimiter(",");
-		int first=sc.nextInt();
-		newSortedSequence[0]=first;
-	
-		for(int i=0;i<sortedSequence.length;i++)
-		{
-			newSortedSequence[i+1]=sortedSequence[i];
-			sortedSequence[i]=sortedSequence[i];
-		}
-		
-		
-	    DiskOptimizationApp.getJTextArea().setText("Method\t: SSTF"+'\n'+"-----------------\n"+"Order of Access\t: "+sequence+"\n"+"Total Distance\t= "+working1.substring(0,working1.length()-1)+"\n"+"              \t= "+working2.substring(0,working2.length()-2)+"\n"+"              \t= "+total+'\n');
-		System.out.println("Method\t: SSTF"+'\n'+"-----------------");
+		DiskOptimizationApp.getJTextArea().setText("Method\t: CLOOK"+'\n'+"-----------------\n"+"Order of Access\t: "+sequence+"\n"+"Total Distance\t= "+working1.substring(0,working1.length()-1)+"\n"+"              \t= "+working2.substring(0,working2.length()-2)+"\n"+"              \t= "+total+'\n');
+		System.out.println("Method\t: CLOOK"+'\n'+"-----------------");
 		System.out.println("Order of Access\t: "+sequence);
 		System.out.println("Total Distance\t= "+working1.substring(0,working1.length()-1));
 		System.out.println("              \t= "+working2.substring(0,working2.length()-2));
 		System.out.println("              \t= "+total+'\n');
 		
-		
+		return sortedSequence;
 	}
 	
-	
-	 private static CategoryDataset createDataset()
+
+	  private static CategoryDataset createDataset()
 	    {
-		 	DefaultCategoryDataset defaultcategorydataset = new DefaultCategoryDataset();
-	       	defaultcategorydataset.addValue(r.getCurrent(), "Classes", ""+0);
+	        DefaultCategoryDataset defaultcategorydataset = new DefaultCategoryDataset();
+	        defaultcategorydataset.addValue(r.getCurrent(), "Classes", ""+0);
 	        
 	        for(int i=0; i<sortedSequence.length;i++){
 	        	 
-		        defaultcategorydataset.addValue(sortedSequence[i], "Classes", ""+i+1);
+		        defaultcategorydataset.addValue(sortedSequence[i], "Classes", (i+1)+"");
 	        }
 	        return defaultcategorydataset;
 	    }
 
 	    private static JFreeChart createChart(CategoryDataset categorydataset)
 	    {
-	        JFreeChart jfreechart = ChartFactory.createLineChart("SSTF", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
+	        JFreeChart jfreechart = ChartFactory.createLineChart("C-LOOK", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
 	        jfreechart.addSubtitle(new TextTitle("By The Fantastic 4"));
 	        
 	        TextTitle texttitle = new TextTitle("Authors: A Ameenudeen,Adeel Ateeque,Lee Kai Quan,Shahrikin Alias");
@@ -176,5 +174,4 @@ public class SSTF extends JFrame{
 	        JFreeChart jfreechart = createChart(createDataset());
 	        return new ChartPanel(jfreechart);
 	    }
-	
 }

@@ -1,13 +1,10 @@
-package Control.SSTF;
+package Control.FCFS;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 import javax.swing.ImageIcon;
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import org.jfree.chart.ChartFactory;
@@ -23,75 +20,26 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.ui.HorizontalAlignment;
 import org.jfree.ui.RectangleEdge;
 
-
 import View.DiskOptimizationApp;
-
 import Control.CLOOK.CLook;
 import Control.Reader.Reader;
+import Control.Reader.Start;
 
-
-public class SSTF extends JFrame{
+public class FCFS {
 	static Reader r;
 	static int sortedSequence[];
 	
-	public int sstfValues[]= new int[18];
-	ArrayList<Integer> values = new ArrayList<Integer>();
-	
-	public SSTF(int current,int rawSequence[],Reader r){
-		this.r=r;
-		int n=rawSequence.length;
-		int sstf[]=new int[n];
-		sortedSequence= new int[rawSequence.length];
-		for(int i=0;i<n;i++)
-		{
-			sstf[i]=rawSequence[i];
-			
-		}
-		int ii=-1;
-		for(int i=0;i<n;i++)
-		{
-			int minimum=Integer.MAX_VALUE;
-			ii=i;
-			for(int j=i; j<n;j++)
-			{
-				int distance=Math.abs(current-sstf[j]);
-				if(distance<minimum)
-				{
-					ii=j;
-					minimum=distance;
-				}
-			}
-			int tmp=sstf[i];
-			sstf[i]=sstf[ii];
-			sstf[ii]=tmp;
-			
-		}
-		
-		for(int i=0; i<sstf.length;i++){
-			sortedSequence[i]=sstf[i];
-		}
-		
-		
-		output(sstf);
-		
-		DiskOptimizationApp.jPanel_leftContent= null;
-		DiskOptimizationApp.jPanel_leftContent = createChart();
-		
-		
-	}
-  
-	public void output(int sortedSequence[] ){
+	public FCFS(int rawSequence[],Reader r){
 		String sequence="";
 		String working1="";
 		String working2="";
 		int total=0;
-		int newSortedSequence[]=new int[sortedSequence.length+1];
 		sequence+=r.getCurrent();
 		int previous=r.getCurrent();
-		
-		for(int i=0; i<sortedSequence.length;i++)
+
+		for(int i=0; i<rawSequence.length;i++)
 		{
-			int current=sortedSequence[i];
+			int current=rawSequence[i];
 			sequence+=","+current;
 			int d= Math.abs(previous-current);
 			
@@ -99,26 +47,27 @@ public class SSTF extends JFrame{
 			working2+=d+" + ";
 			total+=d;
 			previous=current;
+			
 		}
 		
-		Scanner sc = new Scanner(sequence);
-		sc.useDelimiter(",");
-		int first=sc.nextInt();
-		newSortedSequence[0]=first;
-	
-		for(int i=0;i<sortedSequence.length;i++)
-		{
-			newSortedSequence[i+1]=sortedSequence[i];
-			sortedSequence[i]=sortedSequence[i];
+		sortedSequence= new int[rawSequence.length];
+		for(int i=0;i<rawSequence.length;i++){
+			sortedSequence[i]=rawSequence[i];
 		}
 		
 		
-	    DiskOptimizationApp.getJTextArea().setText("Method\t: SSTF"+'\n'+"-----------------\n"+"Order of Access\t: "+sequence+"\n"+"Total Distance\t= "+working1.substring(0,working1.length()-1)+"\n"+"              \t= "+working2.substring(0,working2.length()-2)+"\n"+"              \t= "+total+'\n');
-		System.out.println("Method\t: SSTF"+'\n'+"-----------------");
+		
+		
+		//DiskOptimizationApp.getJTextArea().setText("Method\t: FCFS"+'\n'+"-----------------\n"+"Order of Access\t: "+sequence+"\n"+"Total Distance\t= "+working1.substring(0,working1.length()-1)+"\n"+"              \t= "+working2.substring(0,working2.length()-2)+"\n"+"              \t= "+total+'\n');
+		System.out.println("Method\t: FCFS"+'\n'+"-----------------");
 		System.out.println("Order of Access\t: "+sequence);
 		System.out.println("Total Distance\t= "+working1.substring(0,working1.length()-1));
 		System.out.println("              \t= "+working2.substring(0,working2.length()-2));
 		System.out.println("              \t= "+total+'\n');
+		
+		
+		DiskOptimizationApp.jPanel_leftContent= null;
+		DiskOptimizationApp.jPanel_leftContent = createChart();
 		
 		
 	}
@@ -126,19 +75,20 @@ public class SSTF extends JFrame{
 	
 	 private static CategoryDataset createDataset()
 	    {
+		 System.out.println("current  : "+r.getCurrent());
 		 	DefaultCategoryDataset defaultcategorydataset = new DefaultCategoryDataset();
-	       	defaultcategorydataset.addValue(r.getCurrent(), "Classes", ""+0);
+	        defaultcategorydataset.addValue(r.getCurrent(), "Classes", ""+0);
 	        
 	        for(int i=0; i<sortedSequence.length;i++){
 	        	 
-		        defaultcategorydataset.addValue(sortedSequence[i], "Classes", ""+i+1);
+	        	   defaultcategorydataset.addValue(sortedSequence[i], "Classes", (i+1)+"");
 	        }
 	        return defaultcategorydataset;
 	    }
 
 	    private static JFreeChart createChart(CategoryDataset categorydataset)
 	    {
-	        JFreeChart jfreechart = ChartFactory.createLineChart("SSTF", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
+	        JFreeChart jfreechart = ChartFactory.createLineChart("FCFS", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
 	        jfreechart.addSubtitle(new TextTitle("By The Fantastic 4"));
 	        
 	        TextTitle texttitle = new TextTitle("Authors: A Ameenudeen,Adeel Ateeque,Lee Kai Quan,Shahrikin Alias");
@@ -176,5 +126,4 @@ public class SSTF extends JFrame{
 	        JFreeChart jfreechart = createChart(createDataset());
 	        return new ChartPanel(jfreechart);
 	    }
-	
 }

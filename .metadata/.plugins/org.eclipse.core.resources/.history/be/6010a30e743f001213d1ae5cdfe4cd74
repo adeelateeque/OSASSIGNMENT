@@ -67,9 +67,7 @@ public class SSTF extends JFrame{
 			
 		}
 		
-		for(int i=0; i<sstf.length;i++){
-			sortedSequence[i]=sstf[i];
-		}
+	
 		
 		
 		output(sstf);

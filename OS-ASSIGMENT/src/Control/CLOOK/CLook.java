@@ -89,7 +89,7 @@ public class CLook {
 			}
 		}
 		
-		output(sortedSequence);
+		sortedSequence=output(sortedSequence);
 	}
 	
 	public int [] output(int sortedSequence[]){

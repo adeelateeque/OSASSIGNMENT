@@ -67,9 +67,7 @@ public class SSTF extends JFrame{
 			
 		}
 		
-		for(int i=0; i<sstf.length;i++){
-			sortedSequence[i]=sstf[i];
-		}
+	
 		
 		
 		output(sstf);
@@ -138,7 +136,7 @@ public class SSTF extends JFrame{
 
 	    private static JFreeChart createChart(CategoryDataset categorydataset)
 	    {
-	        JFreeChart jfreechart = ChartFactory.createLineChart("SSTF", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
+	        JFreeChart jfreechart = ChartFactory.createLineChart("C-LOOK", null, "", categorydataset, PlotOrientation.HORIZONTAL, false, true, false);
 	        jfreechart.addSubtitle(new TextTitle("By The Fantastic 4"));
 	        
 	        TextTitle texttitle = new TextTitle("Authors: A Ameenudeen,Adeel Ateeque,Lee Kai Quan,Shahrikin Alias");
